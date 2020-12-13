@@ -1,0 +1,1143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 180%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #0667DB;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #02287A;
+    font-weight: 500;
+}
+
+h6{
+    font-size: 14px;
+}
+
+p{
+    font-size: 16px;
+}
+
+#separator {
+    margin-top: 16px;
+}
+
+/*Alert Message Box*/
+.alert {
+    padding: 2em;
+    background-color: rgba(2, 40, 122, 0.9);
+    color: white;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+table{
+    border-collapse: collapse;
+    border-radius: 4px;
+    overflow:hidden;
+}
+
+.highlight {
+  font-size: 20px;
+  color: #02287A;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #02287A;
+    min-height: 6vh;
+    /* z-index: 3; */
+}
+
+/* .shadow-background{ */
+    /* background-color: #000;
+    width: 100%;
+    height: 100vh; */
+    /* z-index: 2; */
+    /* right:0;
+    top: 0;
+    position: absolute;
+    opacity: 0.9;
+    transition: background-color 0.5s ease-out; */
+/* }  */
+
+.logo {
+    display: none;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    /* z-index: 4; */
+    top: 0;
+}
+
+.nav-links li{
+    padding: 18px 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.nav-links li a:hover{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.burger-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.burger-menu div{
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1140px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        padding: 2em;
+        position: absolute;
+        right: 0px;
+        height: 80vh;
+        top: 6vh;
+        background-color: #02287A;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        transform: translateY(-120%);
+        transition: transform 0.5s ease-in;
+    }
+    .burger-menu{
+        display: inline;
+    }
+    /* .logo{
+        display: inline;
+    } */
+    .logo {
+        display: inline-block;
+    }
+
+    .logo a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        padding: 18px 20px;
+    }
+}
+
+@media screen and (min-width: 1140px){
+    .shadow-background{
+        display: none;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+    min-height: 10vh;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.header-picture{
+    background-image: url("images/yokohama_office.jpg");
+    background-size: 100% 85vh;
+}
+
+.multiply-picture{
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(2, 40, 122, 1), rgba(2, 40, 122, 0.5));
+    background-blend-mode: multiply;
+}
+
+/* Programs */
+.session-responsive{
+    display: none;
+}
+
+.schedule-table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.speaker1-info{
+    margin: 0px 26px;
+}
+
+
+.session1-responsive{
+    border: 1px solid #c4c4c4;
+}
+
+.session1-responsive th, td{
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+}
+
+
+.schedule-table .schedule-time {
+  background: #F3F6FC;
+  padding: 0rem 1rem;
+  border: 1px solid #C4C4C4;
+  text-align: center;
+}
+
+.schedule-table .schedule-content {
+  background: white;
+  font-size: 16;
+  font-weight: bold;
+  padding: 1.5rem 1.5rem;
+  border: 1px solid #C4C4C4;
+}
+
+.session-schedule {
+  font-size: 16px;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.session-schedule .schedule-time {
+  color: #02287A;
+  min-width: 120px;
+  font-size: 14px;
+  background: white;
+  padding: 0rem 0.5rem;
+  border: 1px solid #C4C4C4;
+  text-align: center;
+}
+
+.session-schedule .schedule-content {
+  padding: 1rem 1rem;
+  border: 1px solid #C4C4C4;
+  text-align: left;
+}
+
+.group-links a{
+    text-decoration: none;
+    color: #0667DB; 
+    font-style: italic;
+}
+
+.schedule-1 {
+  background: white;
+}
+
+.schedule-2 {
+  background: #F3F6FC;
+}
+
+.chairs-headshot{
+    height: 120px;
+    width: 120px;
+    border-radius: 4px;
+}
+
+.best-paper {
+    color: #02287A;
+    font-weight: bold;
+    padding: 3px 10px;
+    border: 2px solid #02287A;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.honorary {
+    display: flex; 
+    margin-bottom: 8px;
+}
+
+.honorable-mention {
+  color: #0667DB;
+  font-weight: bold;
+  padding: 3px 10px;
+  border: 2px solid #0667DB;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+.chair-section {
+    margin-bottom: 2rem;
+}
+
+.chair-section a {
+  text-decoration: none;
+  color: #0667DB;
+  font-style: italic;
+}
+
+.chair-section h3 {
+  margin-bottom: 1rem;
+}
+
+.program-committee h3{
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.program-committee table{
+  width: 100%;
+  text-align: center;
+}
+
+.program-committee td {
+  background-color: white;
+  padding: 1rem 0rem;
+  width: 50%;
+}
+
+.text-title{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 4rem;
+    color: #fff;
+    width: 100%;
+    height: 70vh;
+}
+
+.text-title ul{
+    list-style: none;
+}
+
+.table-of-content {
+  /* display: flex; */
+  /* margin-bottom: 2em; */
+}
+
+.table-of-content li {
+    display: inline-block;
+    padding: 0rem 0.5rem;
+    margin: 0.5rem 0rem;
+    list-style-type: none;
+    border-left: 2px solid black;
+}
+
+.venue-info{
+    margin: 0px 26px;
+}
+
+.speakers-list{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+/* For footer */
+footer{
+    width: 100%;
+    padding: 3em 2em 2em 2em;
+    background-color: #02287A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer .h4{
+    font-weight: 500;
+}
+
+.icons{
+    margin: 0.5em 0.5em 2em 0.5em;
+}
+
+.icons span{
+    margin: 0 0.5em;
+}
+
+.twitter-icon, .facebook-icon{
+    width: 32px;
+    height: 32px;
+}
+
+small{
+    opacity: 0.7;
+}
+
+
+.introduction{
+    display: flex;
+    margin: 3em 4em;
+}
+
+
+.intro-note{
+    padding-right: 2em;
+    flex:2;
+    border-right: 1px solid #C4C4C4;
+}
+
+.intro-note p:nth-child(2){
+    margin-bottom: 1em;
+}
+
+.updates{
+    flex: 1;
+    padding-left: 2em;
+}
+
+.updates ul{
+    list-style: none;
+}
+
+.updates ul li{
+    padding: 0.5em 0;
+}
+
+.updates ul li:nth-child(2){
+    border-bottom: 1px solid #C4C4C4;
+    border-top: 1px solid #C4C4C4;
+}
+
+.updates ul li:nth-child(1){
+    padding-top: 0;
+}
+
+.updates h4{
+    font-weight: 700;
+}
+
+/* Important Dates */
+.important-dates{
+    background-color: #02287A;
+    color: #fff;
+    padding: 3em 4em;
+}
+
+.important-dates h2{
+    font-weight: 700;
+}
+
+.important-dates-table{
+    width: 100%;
+    color: #fff;
+    border-collapse: collapse;
+    margin: 24px 0 2.5em 0;
+    border-radius: 4px;
+}
+
+.important-dates-table th{
+    width: 33%;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+}
+
+.important-dates-table tr{
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    background-color: #02287A!important;
+}
+
+.important-dates-table tbody{
+    background-color: #02287A;
+}
+
+.important-dates-table .middle-info{
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    
+}
+
+.important-dates-table tr:last-child{
+    border-bottom: 1px solid #fff;
+}
+
+.important-dates-table td, th{
+    padding: 1em 2em;
+    background-color: #02287A;
+}
+
+.important-dates-table h6{
+    font-weight: 500;
+    opacity: 0.75;
+}
+
+.default-button{
+    padding: 16px 32px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #0667DB;
+    border: none;
+}
+
+.default-button:hover{
+    background-color: #338FFC;
+    cursor: pointer;
+}
+
+.make-submission{
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Keynote Speakers */
+
+.keynote-speakers{
+    padding: 3em 4em;
+}
+
+.speaker-info{
+    margin-top: 24px;
+    display: flex;
+}
+
+.speaker-info img{
+    height: 353px;
+    width: 353px;
+    border-radius: 4px;
+}
+
+.affiliation-link{
+    color: #0667DB;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.speaker1-name{
+    width: 353px;
+    flex: 1;
+}
+
+.speaker-description{
+    flex: 2;
+    margin-left: 2em;
+}
+
+.speaker-description h3{
+    font-weight: 700;
+}
+
+.speaker-description p{
+    padding: 1em 0 0 0;
+}
+
+/* Sponsors */
+.sponsors{
+    padding: 3em 4em;
+}
+
+.sponsors h3{
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.sponsor-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-logos img{
+    height: 120px;
+    padding: 0 2em;
+}
+
+/* Proceedings */
+.proceedings{
+    padding: 3em 4em;
+}
+
+.proceedings h3{
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+
+.proceedings-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proceedings-logos img{
+    height: 120px;
+    padding: 0 2em;
+}
+
+
+/* Call for participation EN page */
+.timezone-link {
+    color: #fff;
+}
+
+.prepare-submission {
+    padding: 2em 4em;
+}
+
+#submission-details{
+    margin: 2rem 4rem;
+}
+
+.submission-points ul{
+    list-style-type: decimal;
+    margin: 0 0 0 3em;
+}
+
+.document{
+    margin: 24px 0;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 24px;
+    border: 1px solid #C4C4C4;
+    background-color: #F3F6FC;
+    border-radius: 4px;
+}
+
+.document div{
+    margin-left: 2em;
+}
+
+.submission-details .default-button{
+    font-weight: 700;
+}
+
+.themes{
+    /*padding: 2em 0;*/
+    margin: 2rem 4rem;
+}
+
+.themes-points{
+    margin: 0 0 0 3em;
+}
+
+.important-dates-overview{
+    border: 1px solid #C4C4C4;
+    width: 100%;
+    margin: 24px 0 52px 0;
+    border-spacing: 0;
+}
+
+.important-dates-overview th{
+    border: 1px solid #C4C4C4;
+    background-color: #F3F6FC;
+    text-align: start;
+}
+
+.important-dates-overview td{
+    border: 1px solid #C4C4C4;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #C4C4C4;
+}
+
+.important-date{
+    font-weight: 700;
+}
+
+.submission-intro{
+    margin: 3em 4em;
+}
+
+.submission-intro ul{
+    margin-left: 2em;
+}
+
+.original-works{
+    padding: 0 4em;
+}
+
+.original-works h5 {
+    margin-bottom: 16px;
+}
+
+.showcase{
+    padding: 2rem 4rem;
+}
+
+
+.selection-process{
+    padding: 2rem 4rem;
+}
+
+.participate-symposium { 
+    padding: 2rem 4rem;
+}
+
+.bl{
+    padding: 2rem 4rem;
+}
+
+.questions-call{
+    margin: 2em 4em;
+}
+
+/* Awards Page */
+.paper-title{
+    font-weight: 700;
+}
+
+.awards-wrapper{
+    padding: 4em;
+}
+
+.awards-list h2{
+    margin: 0 0 0.5em 0;
+}
+
+.awards-list h5{
+    margin: 1.5em 0 0.5em 0;
+}
+
+.awards-list ul{
+    list-style: none;
+}
+
+.awards-list ul li{
+    margin: 8px 0;
+}
+
+.questions-awards{
+    margin: 0 4em 52px 4em;
+}
+/* Past Events  */
+.past-events{
+    margin: 5em 0 10em 4em;
+}
+
+/* Attending page */
+.register-div p {
+    padding: 1em 0;
+}
+
+.code-of-conduct p {
+    padding-top: 1em;
+} 
+
+.attending-wrapper{
+    padding: 4em;
+}
+
+.spacing{
+    padding: 1.5em;
+}
+
+.have-questions {
+    padding: 2em 4em;
+}
+
+.awards-wrapper .have-questions{
+    padding: 0rem;
+}
+
+.have-questions h3 {
+    font-weight: 700;
+}
+
+.have-questions .chair-email{
+    text-decoration: none;
+    color: #0667DB;
+}
+
+.have-questions .contact{
+    margin-top: 1em;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact div{
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+
+.important-dates-table-responsive{
+    display: none;
+}
+
+.important-dates-table-responsive tr{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border: 1px solid #C4C4C4;
+}
+
+.important-dates-table-responsive th{
+    border-bottom: 1px solid #C4C4C4;
+    padding: 1em 2em;
+}
+
+.important-dates-table-responsive td{
+    padding: 1em 2em;
+}
+
+.important-dates-table-responsive{
+    margin: 24px 0 2em 0;
+}
+
+/* Organizers */
+.organizer-wrapper{
+    padding: 4em;
+}
+
+.organizer-points {
+    margin-left: 3em;
+}
+
+.program-committee tr td{
+    border: 1px solid #C4C4C4;
+}
+
+.chair-picture{
+    width: 120px; 
+    height: 120px;
+    border-radius: 4px;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 600px){
+    /* Home page */
+    .text-title h1{
+        font-size: 42px;
+    }
+
+    .introduction{
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .intro-note{
+        border: none;
+        border-bottom: 1px solid #C4C4C4;
+        padding-bottom: 2em;
+    }
+
+    .updates{
+        margin-top: 2em;
+        padding: 0;
+    }
+
+    .important-dates-table{
+        display: none;
+    }
+
+    .important-dates-table-responsive{
+        display: inline-block;
+    }
+
+    .speaker-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .speaker-description{
+        margin: 24px 0 0 0;
+    }
+
+    .speaker-info img{
+        margin: 0 auto;
+        height: 250px;
+        width: 250px;
+    }
+
+    .sponsors h2{
+        margin-bottom: 24px;
+    }
+
+    .sponsor-logos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sponsor-logos img{
+        width: 100%;
+    }
+
+    .proceedings h2{
+        margin-bottom: 24px;
+    }
+
+    /* Programs */
+    .best-paper {
+        width: auto;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .date-venue{
+        flex-direction: column;
+    }
+    .honorary {
+        flex-direction: column;
+    }
+    .honorable-mention {
+        width: 100%;
+        text-align: center;
+    }
+    .venue-info{
+        margin: 0;
+    }
+    .venue-info{
+        margin-top: 24px;
+    }
+    .speakers-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .speaker1-info{
+        margin-top: 24px;
+    }
+    .session-schedule .schedule-time {
+        min-width: auto;
+    }
+
+    /* Call for Papers */
+    .contacts {
+        flex-direction: column;
+    }
+
+    .document {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px){
+    /* Programs page */
+    .table-of-content{
+        text-align: center;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    /* Common */
+    .table-of-content{
+        text-align: center;
+    }
+
+    /* Awards */
+    .awards-wrapper{
+        padding: 2em;
+    }
+
+    /* Attending */
+    .attending-wrapper{
+        padding: 2em;
+    }
+
+    /* Organizers */
+    .organizer-wrapper{
+        padding: 2em;
+    }
+
+    /* Home */
+    .logo a{
+        display: inline;
+        width: 100%;
+    }
+
+    .speaker-info img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .sponsors h2 {
+        margin-bottom: 24px;
+    }
+
+    .sponsor-logos img {
+        height: 90px;
+    }
+
+    .proceedings h2 {
+        margin-bottom: 24px;
+    }
+
+    /* Programs */
+    .schedule-table .schedule-time{
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+    }
+}
+
+/*Footer*/
+#twitter:hover {
+    cursor: pointer;
+}
+
+#facebook:hover {
+    cursor: pointer;
+}
+
+/*Scroll to top*/
+#goToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0667DB; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+
+    -webkit-box-shadow: -1px 2px 11px 2px rgba(0,0,0,0.25); 
+    box-shadow: -1px 2px 11px 2px rgba(0,0,0,0.25);
+
+}
+  
+#goToTop:hover {
+    background-color: rgba(6, 103, 219, 0.9); /* Add a dark-grey background on hover */
+}
+
+.up-arrow {
+    height: 24px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+
+}
+
+/* Loader */
+
+#loader-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #02287A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
