@@ -649,6 +649,10 @@ small{
     color: #fff;
 }
 
+.contacts ul {
+    margin-left: 3em;
+}
+
 .prepare-submission {
     padding: 2em 4em;
 }
