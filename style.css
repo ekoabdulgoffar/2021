@@ -551,8 +551,8 @@ small{
     cursor: pointer;
 }
 
-.make-submission{
-    margin: 0 auto;
+.make-submission {
+    margin-top: 1rem;
     display: block;
     font-size: 16px;
     font-weight: 700;
@@ -785,7 +785,7 @@ small{
 }
 /* Past Events  */
 .past-events{
-    margin: 5em 0 10em 4em;
+    margin: 0 2em;
 }
 
 /* Attending page */
@@ -824,10 +824,6 @@ small{
 
 .have-questions .contact{
     margin-top: 1em;
-}
-
-.contacts {
-    display: flex;
 }
 
 .contact {
@@ -1145,3 +1141,34 @@ small{
     }
   }
   
+
+  /* homepage, edited */
+  .mainpage-content {
+      margin: 2rem 4rem;
+      display: flex;
+  }
+
+  .important-dates-side {
+      flex: 1;
+      padding-left: 2rem;
+      border-left: 1px solid #C4C4C4;
+  }
+
+  .important-dates-side li {
+    list-style: none;
+}
+
+  .round-list {
+      margin-left: 1.5rem;
+  }
+
+  .main-content {
+      flex: 2;
+      padding-right: 2rem;
+  }
+
+      
+/* Past Events changed*/
+.main-past-events {
+    margin: 2rem 4rem;
+}
