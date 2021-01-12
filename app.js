@@ -63,12 +63,37 @@ window.onload = function() {
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         })
     }
+
+    const chooseLang = () => {
+        $('[lang]').hide();
+        $('[lang="english"]').show();
+        $('#lang-switch').change(function () {
+            var lang = $(this).val();
+            switch (lang) {
+                case 'english':
+                    $('[lang]').hide();
+                    $('[lang="english"]').show();
+                    $('#chinese-part').hide();
+                break;
+                case 'chinese':
+                    $('[lang]').hide();
+                    $('[lang="chinese"]').show();
+                    $('#english-part').hide();
+                break;
+                default:
+                    $('[lang]').hide();
+                    $('[lang="english"]').show();
+                break;
+                }
+        })
+    }
     
     const app = () => {
         navSlide();
         goToSocialMedia();
         goToTopButton();
         triggerLoad();
+        chooseLang();
     }
     
     app()

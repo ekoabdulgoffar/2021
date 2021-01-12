@@ -987,6 +987,10 @@ small{
     }
 }
 
+#lang-switch {
+    margin-left: 1rem;
+}
+
 @media screen and (max-width:800px){
     /* Programs page */
     .table-of-content{
