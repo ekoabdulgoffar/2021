@@ -879,9 +879,38 @@ small{
     border-radius: 4px;
 }
 
+.important-dates-top {
+    padding-left: 2rem;
+    border-left: 1px solid #C4C4C4;
+    display: none;
+}
+
+.important-dates-top li {
+  list-style: none;
+}
+
+.view-important-dates {
+    text-align: center;
+    background-color: #0667DB;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hide-large {
+    display: none;
+}
+
 /* RESPONSIVENESS */
 @media screen and (max-width: 600px){
     /* Home page */
+    .hide-small {
+        display: none;
+    }
+
+    .hide-large {
+        display: block;
+    }
+
     .text-title h1{
         font-size: 42px;
     }

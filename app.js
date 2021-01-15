@@ -87,6 +87,18 @@ window.onload = function() {
                 }
         })
     }
+
+    const viewImportantDates = () => {
+        const viewDates = document.querySelector('.view-important-dates');
+        const datesTop = document.querySelector('.important-dates-top')
+        viewDates.addEventListener('click', () => {
+            if (datesTop.classList.contains('hide-large')) {
+                datesTop.classList.remove('hide-large')
+            } else {
+                datesTop.classList.add('hide-large')
+            }
+        })
+    }
     
     const app = () => {
         navSlide();
@@ -94,6 +106,7 @@ window.onload = function() {
         goToTopButton();
         triggerLoad();
         chooseLang();
+        viewImportantDates();
     }
     
     app()
