@@ -1,15 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="title" content="Asian CHI 2021 Symposium">
         <meta name="description" content="Asian CHI 2021 Symposium">
-        <meta http-equiv="refresh" content="30">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Asian CHI 2021 Symposium</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="app.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -18,7 +17,7 @@
         </div>
         <button id="goToTop" title="Go to top">
             <span>
-                <img class="up-arrow" alt="up-arrow" src="icons/up-arrow.svg">
+                <img width="24px" height="24px" class="up-arrow" alt="up-arrow" src="icons/up-arrow.svg">
             </span>
         </button>
         <header>
@@ -33,22 +32,22 @@
                     <li class="dropdown">
                         <button class="dropbtn">Call for Papers
                             <span>
-                                <img class="caret-down" alt="caret-down" src="icons/caret-down.svg">
+                                <img height="8px" width="8px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
                             </span>
                         </button>
                         <div class="dropdown-content">
                             <a href="./cfpEn.html">English</a>
-                            <a href="./cfpCh.html">Chinese</a>
-                            <a href="./cfpMalay.html">Malaysian</a>
+                            <a href="#">Chinese</a>
+                            <a href="#">Japanese</a>
                         </div>
                         <!-- <a href="./cfpEn.html">Call For Paper (EN)</a> -->
                     </li>
                     <li class="cfp-languages">
                         <p>Call for Papers</p>
                         <ul>
-                            <a href="./cfpEn.html">English</a>
-                            <a href="#">Chinese</a>
-                            <a href="#">Japanese</a>
+                            <li><a href="./cfpEn.html">English</a></li>
+                            <li><a href="./cfpCh.html">Chinese</a></li>
+                            <li><a href="./cfpMalay.html">Malaysian</a></li>
                         </ul>
                     </li>
                     <li>
@@ -101,7 +100,7 @@
                     </div>
                 </div> -->
                 <p>
-                    <span id="english-part" lang="english">
+                    <span id="english-part">
 
                         <div id="separator"></div>
         
@@ -306,7 +305,7 @@
                             </div>
                             <div id="contacts-cfp" class="contacts">
                                 <div class="contact">
-                                    <img class="chair-picture" alt="general-chair-name" src="images/josh.JPG">
+                                    <img width="120px" height="120px" class="chair-picture" alt="general-chair-name" src="images/josh.jpg">
                                     <div class="" style="margin-left: 1.5rem;">
                                         <p style="font-style: bold"><b>Josh (Adi B. Tedjasaputra)</b></p>
                                         <p>Customer Experience Insight Pty Ltd</p>
@@ -315,7 +314,7 @@
                                 </div>
                                 <div id="separator"></div>
                                 <div class="contact">
-                                    <img class="chair-picture" alt="general-chair-name" src="images/masitah.JPG">
+                                    <img width="120px" height="120px" class="chair-picture" alt="general-chair-name" src="images/masitah.jpg">
                                     <div>
                                     <p style="font-style: bold"><b>Masitah Ghazali</b></p>
                                     <p>Universiti Teknologi Malaysia<-- Universiti</p>
@@ -324,7 +323,7 @@
                                 </div>
                                 <div id="separator"></div>
                                 <div class="contact">
-                                    <img class="chair-picture" alt="general-chair-name" src="images/sayan.jpeg">
+                                    <img width="120px" height="120px" class="chair-picture" alt="general-chair-name" src="images/sayan.jpg">
                                     <div>
                                     <p style="font-style: bold"><b>Sayan Sarcar</b></p>
                                     <p>University of Tsukuba, Japan</p>
@@ -341,14 +340,17 @@
                 <p>Follow Our Social Media</p>
                 <div class="icons">
                     <span id="twitter">
-                        <img class="twitter-icon" alt="twitter-icon" src="icons/twitter-icon.svg">
+                        <img height="32px" width="32px" class="twitter-icon" alt="twitter-icon" src="icons/twitter-icon.svg">
                     </span>
                     <span id="facebook">
-                        <img class="facebook-icon" alt="facebook-icon" src="icons/facebook-icon.svg">
+                        <img height="32px" width="32px" class="facebook-icon" alt="facebook-icon" src="icons/facebook-icon.svg">
                     </span>
                 </div>
                 <small>Showcasing Asian ingenuity in addressing local challenges in human-computer interaction research.</small>
-                <small>&copy Copyright 2020 Asian CHI 2021 Symposium. Photo Credit: 2020 Office of the City of Yokohama Representative to the Americas</small>
+                <small>&copy Copyright 2020 Asian CHI Symposium 2021. Photo Credit: 2020 Office of the City of Yokohama Representative to the Americas</small>
             </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+        <script src="app.js"></script>
     </body>
 </html>

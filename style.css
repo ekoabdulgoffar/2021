@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    display: block!important;
 }
 
 a {
@@ -714,6 +715,7 @@ small{
 
 .important-dates-overview{
     border: 1px solid #C4C4C4;
+    color: #000;
     width: 100%;
     margin: 24px 0 52px 0;
     border-spacing: 0;
@@ -1121,8 +1123,8 @@ small{
 
 .up-arrow {
     height: 24px;
+    width: 24px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-
 }
 
 /* Loader */
@@ -1271,4 +1273,8 @@ small{
   .cfp-languages ul a{
       padding-left: 1em;
       display: block;
+  }
+
+  .cfp-languages ul {
+      list-style: none;
   }
