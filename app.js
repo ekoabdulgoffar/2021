@@ -87,6 +87,16 @@ window.onload = function() {
                 }
         })
     }
+
+    // clicking call for participation on navbar sends to cfpEn
+    const goToCfpEn = () => {
+        const cfp = document.querySelector('.dropbtn');
+    
+        //Toggle Navbar
+        cfp.addEventListener('click', () => {
+            window.location = 'https://asian-chi.github.io/2021/cfpEn.html'
+        })
+    }
     
     const app = () => {
         navSlide();
@@ -94,6 +104,7 @@ window.onload = function() {
         goToTopButton();
         triggerLoad();
         chooseLang();
+        goToCfpEn();
     }
     
     app()
