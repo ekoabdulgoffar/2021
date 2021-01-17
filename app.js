@@ -64,30 +64,6 @@ window.onload = function() {
         })
     }
 
-    const chooseLang = () => {
-        $('[lang]').hide();
-        $('[lang="english"]').show();
-        $('#lang-switch').change(function () {
-            var lang = $(this).val();
-            switch (lang) {
-                case 'english':
-                    $('[lang]').hide();
-                    $('[lang="english"]').show();
-                    $('#chinese-part').hide();
-                break;
-                case 'chinese':
-                    $('[lang]').hide();
-                    $('[lang="chinese"]').show();
-                    $('#english-part').hide();
-                break;
-                default:
-                    $('[lang]').hide();
-                    $('[lang="english"]').show();
-                break;
-                }
-        })
-    }
-
     // clicking call for participation on navbar sends to cfpEn
     const goToCfpEn = () => {
         const cfp = document.querySelector('.dropbtn');
@@ -97,14 +73,25 @@ window.onload = function() {
             window.location = 'https://asian-chi.github.io/2021/cfpEn.html'
         })
     }
+
+    const setMobileTable = () => {
+        const tableEl = document.querySelector('.ambassadors-table');
+        const thEls = tableEl.querySelectorAll('thead th');
+        const tdLabels = Array.from(thEls).map(el => el.innerText);
+        tableEl.querySelectorAll('tbody tr').forEach( tr => {
+            Array.from(tr.children).forEach( 
+            (td, ndx) =>  td.setAttribute('label', tdLabels[ndx])
+            );
+        });
+    }
     
     const app = () => {
         navSlide();
         goToSocialMedia();
         goToTopButton();
         triggerLoad();
-        chooseLang();
         goToCfpEn();
+        setMobileTable();
     }
     
     app()

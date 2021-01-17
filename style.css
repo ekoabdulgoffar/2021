@@ -672,6 +672,9 @@ small{
     margin-left: 3em;
 }
 
+.contact-country, .contact-affiliation {
+    font-size: 14px;
+}
 .prepare-submission {
     padding: 2em 4em;
 }
@@ -899,6 +902,26 @@ small{
     border-radius: 4px;
 }
 
+.ambassadors-table {
+    color: #000;
+    width: 100%;
+    margin: 24px 0 52px 0;
+    border-spacing: 0;
+}
+
+.ambassadors-table th{
+    border: 1px solid #C4C4C4;
+    background-color: #F3F6FC;
+    text-align: start;
+}
+
+.ambassadors-table td{
+    border: 1px solid #C4C4C4;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #C4C4C4;
+}
+
 /* RESPONSIVENESS */
 @media screen and (max-width: 600px){
     /* Home page */
@@ -1017,6 +1040,55 @@ small{
 
     .document {
         width: 100%;
+    }
+
+    /* Organizers */
+    .ambassadors-table {
+        width: 100%;
+    }
+    
+      .ambassadors-table thead {
+        display: none;
+      }
+    
+      /* .ambassadors-table tr, .ambassadors-table td {
+        border-bottom: 1px solid #C4C4C4;
+      } */
+    
+      .ambassadors-table td {
+        display: flex;
+        /* margin-bottom: 16px; */
+      }
+      
+      .ambassadors-table td::before {
+        content: attr(label);
+        font-weight: bold;
+        width: 120px;
+        min-width: 120px;
+      }
+
+      .ambassador-table th, td:nth-child(3) {
+        margin-bottom: 8px;
+      }
+
+      .ambassador-table tr, td:nth-child(1){
+        border: 1px solid #02287A;
+        border-bottom: 1px solid #C4C4C4;
+    }
+
+    .ambassador-table tr, td:nth-child(1){
+        border: 1px solid #02287A;
+        border-bottom: 1px solid #C4C4C4;
+    }
+
+    .ambassador-table tr, td:nth-child(2){
+        border-left: 1px solid #02287A;
+        border-right: 1px solid #02287A;
+    }
+
+    .ambassador-table tr, td:nth-child(3){
+        border: 1px solid #02287A;
+        border-top: 1px solid #C4C4C4;
     }
 }
 
