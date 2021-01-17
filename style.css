@@ -672,6 +672,10 @@ small{
     margin-left: 3em;
 }
 
+.contact-info {
+    font-size: 14px;
+}
+
 .contact-country, .contact-affiliation {
     font-size: 14px;
 }
