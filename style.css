@@ -1290,7 +1290,7 @@ small{
 .caret-down {
     height: 8px;
     opacity: 0.7;
-    padding-left: 8px;
+    /* padding-left: 8px; */
 }
 
 .dropbtn {
