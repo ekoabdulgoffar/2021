@@ -1018,6 +1018,14 @@ small{
         padding: 0;
     }
 
+    .mainpage-content {
+        margin: 2rem 2rem!important;
+    }
+
+    .main-past-events {
+        margin: 2rem 2rem!important;
+    }
+
     .text-title {
         margin-left: 2rem;
     }
