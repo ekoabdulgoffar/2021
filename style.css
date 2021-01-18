@@ -158,6 +158,10 @@ nav{
     display: none;
 }
 
+.main-container {
+    margin: 2rem 4rem
+}
+
 @media screen and (max-width: 1140px){
     body{
         overflow-x: hidden;
@@ -949,6 +953,10 @@ small{
         padding: 0;
     }
 
+    .important-dates {
+        padding: 2em 2em;
+    }
+
     .important-dates-table{
         display: none;
     }
@@ -1000,6 +1008,14 @@ small{
 
     .separator-important {
         display: block;
+    }
+    
+    .main-container, .themes, #submission-details, #original-works, .showcase, .prepare-submission, .selection-process, .participate-symposium, .have-questions {
+        margin: 2rem 2rem;
+    }
+
+    .original-works, #showcase, .prepare-submission, .selection-process, #participate-symposium, .have-questions {
+        padding: 0;
     }
 
     /* Programs */
