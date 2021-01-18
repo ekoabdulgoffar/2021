@@ -1018,6 +1018,22 @@ small{
         padding: 0;
     }
 
+    .text-title {
+        margin-left: 2rem;
+    }
+
+    .main-title {
+        font-size: 32px!important;
+    }
+
+    .main-place {
+        font-size: 20px!important;
+    }
+
+    .main-date {
+        font-size: 16px!important;
+    }
+
     /* Programs */
     .best-paper {
         width: auto;
