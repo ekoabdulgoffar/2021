@@ -398,7 +398,7 @@ nav{
     justify-content: center;
     margin-left: 4rem;
     color: #fff;
-    width: 100%;
+    width: 80%;
     height: 70vh;
 }
 
@@ -672,6 +672,10 @@ small{
     color: #fff;
 }
 
+.warning-top {
+    color: #02287A;
+    font-size: 14px;
+}
 .contacts ul {
     margin-left: 3em;
 }
@@ -930,6 +934,10 @@ small{
     border: 1px solid #C4C4C4;
 }
 
+.intro-wrapper {
+    margin: 2rem 4rem;
+}
+
 /* RESPONSIVENESS */
 @media screen and (max-width: 600px){
     /* Home page */
@@ -1028,6 +1036,10 @@ small{
 
     .text-title {
         margin-left: 2rem;
+    }
+
+    .intro-wrapper {
+        margin: 2rem 2rem;
     }
 
     .main-title {

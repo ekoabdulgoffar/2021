@@ -1,15 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="title" content="Asian CHI 2021 Symposium">
         <meta name="description" content="Asian CHI 2021 Symposium">
-        <meta http-equiv="refresh" content="30">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Asian CHI 2021 Symposium</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="app.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -18,7 +17,7 @@
         </div>
         <button id="goToTop" title="Go to top">
             <span>
-                <img class="up-arrow" alt="up-arrow" src="./icons/up-arrow.svg">
+                <img width="24px" height="24px" class="up-arrow" alt="up-arrow" src="icons/up-arrow.svg">
             </span>
         </button>
         <header>
@@ -33,22 +32,26 @@
                     <li class="dropdown">
                         <button class="dropbtn">Call for Papers
                             <span>
-                                <img class="caret-down" alt="caret-down" src="icons/caret-down.svg">
+                                <img height="8px" width="8px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
                             </span>
                         </button>
                         <div class="dropdown-content">
                             <a href="./cfpEn.html">English</a>
                             <a href="./cfpCh.html">Chinese</a>
-                            <a href="./cfpMalay.html">Malaysian</a>
+                            <a href=".cfpMalay.html">Malay</a>
+                            <a href=".cfpJp.html">Japanese</a>
+                            <a href=".cfpId.html">Bahasa Indonesia</a>
                         </div>
                         <!-- <a href="./cfpEn.html">Call For Paper (EN)</a> -->
                     </li>
                     <li class="cfp-languages">
                         <p>Call for Papers</p>
                         <ul>
-                            <a href="./cfpEn.html">English</a>
-                            <a href="#">Chinese</a>
-                            <a href="#">Japanese</a>
+                            <li><a href="./cfpEn.html">English</a></li>
+                            <li><a href="./cfpCh.html">Chinese</a></li>
+                            <li><a href="./cfpMalay.html">Malay</a></li>
+                            <li><a href=".cfpJp.html">Japanese</a></li>
+                            <li><a href=".cfpId.html">Bahasa Indonesia</a></li>
                         </ul>
                     </li>
                     <li>
@@ -68,10 +71,9 @@
             <div class="header-picture">
                 <div class="multiply-picture">
                     <!-- <img class="header-image" alt="yokohama-header" src="images/yokohama-header.jpg"> -->
-                    <div class="text-title" style="text-align: left; align-items: start; margin-left: 4rem;">
+                    <div class="text-title">
                         <ul>
-                            <li><h2>Asian CHI Symposium 2021</h2></li>
-                            <li><h1>Call For Participation (JP)</h1></li>
+                            <li><h1>Call for Paper (Japanese)</h1></li>
                         </ul>
                     </div>
                 </div>
@@ -81,235 +83,286 @@
         <script src="../app.js"></script>
 
         <main>
-            <div style="margin: 2rem 4rem">
-              <ul class="table-of-content">
-                <li style="border-left: 0px; padding-left: 0"><a href="#themes" style="text-decoration: none; color: #0667DB;">Themes</a></li>
-                <li> <a href="#important-dates" style="text-decoration: none; color: #0667DB;">Important Dates</a> </li>
-                <li> <a href="#original-works" style="text-decoration: none; color: #0667DB;">Original Works </a> </li>
-                <li> <a href="#showcase" style="text-decoration: none; color: #0667DB;">Showcase</a> </li>
-                <li> <a href="#selection-process" style="text-decoration: none; color: #0667DB;">Selection Process</a> </li>
-                <li> <a href="#participate-symposium" style="text-decoration: none; color: #0667DB;">Participation</a> </li>
-              </ul>
-              <br>
-              <p>The 5th Asian CHI Symposium is the annual symposium organized at CHI conference  to showcase the latest HCI and UX works from Asia and those focusing on incorporating Asian sociocultural factors in their design and implementation.  This symposium promotes the region's unique problems and approaches to the global community. 
-                <div id="separator"></div>
-                We encourage the participation of researchers and practitioners from Asian professional and academic communities in all career stages (e.g., seasoned academics, early career researchers, graduate students, and even undergraduates who have interests in HCI) from Asian communities to be part of this. It also intends to foster a network of young researchers from the Bachelor to Doctoral candidates, recent graduates and postgraduate researchers. 
-                </p>
-              <!--div class="submission-details">
-                <h2>Submission Details</h2>
-                <div class="document">
-                    <img alt="document-icon" src="../icons/document.svg">
-                    <div>
-                        <h4>Template</h4>
-                        <a class= "affiliation-link" href="">CHI 2020 Papers Proceeding template</a>
+            <div class="main-container">
+                <!-- <form>
+                    <label for="lang-switch">
+                        <span lang="chinese"><b>语言: </b></span>
+                        <span lang="english"><b>Language: </b></span>
+                    </label>
+                    <select id="lang-switch">
+                        <option value="english" selected>English</option>
+                        <option value="chinese">中文</option>
+                    </select>
+                </form> -->
+                
+                <!-- <div>
+                    <div lang="chinese">
+                        한국어 텍스트
                     </div>
-                </div>
-                <button class="default-button">Make a Submission</button>
-              </div-->
-              </div>
-            </div>
-            <div id="important-dates" class="important-dates">
-                <h2>Important Dates</h2>
-                <p>The times of submissions for all of the deadlines are 23:59 Japan time <a class="timezone-link" href="https://24timezones.com/time-zone/gmt+9#gref">(GMT + 09).</a>
-                </p>
-                <table class="important-dates-overview">
-                    <tr>
-                        <th colspan="2">Round 1</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Submission Deadline</p>
-                            <!--p>at 23:59 AoE - Anywhere on Earth</p-->
-                        </td>
-                        <td class="important-date">January 28th, 2021</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p> Notification to the Authors</p>
-                        </td>
-                        <td class="important-date">February 4th, 2021</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p> Notification of Acceptance</p>
-                        </td>
-                        <td class="important-date">March 9th, 2021</td>
-                    </tr>
-                    <!--tr>
-                        <td>
-                            <p>Reviews sent to authors</p>
-                        </td>
-                        <td class="important-date">February 11, 2020</td>
-                    </tr-->
-                    <tr>
-                        <th colspan="2">Round 2</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Submission Deadline</p>
-                            <!--p>at 23:59 AoE - Anywhere on Earth</p-->
-                        </td>
-                        <td class="important-date">February 25th, 2021</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Notification to the Authors</p>
-                        </td>
-                        <td class="important-date">March 4th, 2020</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Notification of Acceptance</p>
-                        </td>
-                        <td class="important-date">April 6th, 2020</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Submission of Camera Ready Papers Round 1 & Round 2</p>
-                        </td>
-                        <td class="important-date">April 20th, 2020</td>
-                    </tr>
-                </table>
-            </div>
-            <div id="themes" class="themes">
-                <h2>Themes</h2>
-                <div id="separator"></div>
-                <p>We invite submissions on any of the following research themes and/or contributions within the following HCI fields, but not limited to:</p>
-                <div class="themes-points">
-                  <ul>
-                      <li>Novel interactive systems and interaction design and  techniques;</li>
-                      <li>Novel hardware and software enabling new forms of interaction with computers;</li>
-                      <li>Input and output systems to support creative activities and expressions;</li>
-                      <li>Studies for understanding human capabilities related to interaction with computers;</li>
-                      <li>Knowledge, practices, methods, components, and tools that make technology more useful, usable, and desirable;</li>
-                      <li>Systems and services that address issues prominent in Asia; HCI for development or addressing issues well-known in Asia; </li>
-                      <li>HCI applications for learning, education and family in Asia;</li>
-                      <li>Playful interaction, player experience, and games;</li>
-                      <li>HCI for healthcare management, wellness, medicine;</li>
-                      <li>HCI and UX applications in the industry.</li>
-                      <li>Specific application areas or domains of interest that have significant impacts in the community, e.g.: marginalized community, disability, non-human stakeholders, charities, low and middle-income people, etc. </li>
-                  </ul>
-              </div>
-            </div>
-            <div id="submission-details">
-                <h2>Submission Types</h2>
-                <div id="separator"></div>
-                <p>This year, we welcome two (2) types of submissions: </p>
-                <div class="submission-points">
-                    <ul>
-                        <li>Original Works</li>
-                        <li>Showcase</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="original-works" id="original-works">
-                <h4><b>1. Original Works</b></h4>
-                <div id="separator"></div>
-                <p>This category showcases novel works that include the followings:</p>
-                <div class="submission-points">
-                    <ul>
-                        <li>Completed systems and/or studies, </li>
-                        <li>Preliminary results of early iterations of design, engineering, or empirical studies, or </li>
-                        <li>An extension or a discussion of alternative perspectives of previously-published work. </li>
-                    </ul>
-                </div>
-                <div id="separator"></div>
-                <p>For the submission of the Original Works, authors can choose to submit their works in the form of:  </p>
-                <div class="submission-points">
-                    <ul>
-                        <li>Paper (between 5-10 pages included references and acknowledgement)</li>
-                        <li>Poster or demo (up to 4 pages included references and acknowledgement).  </li>
-                    </ul>
-                </div>
-                <div id="separator"></div>
-                <p>All accepted papers of the Original Works will be published to the ACM Digital Library. 
-                    Whereas, for the Poster/Demo submission, the authors can opt-out not to publish their works to the ACM Digital Library.  
-                </p>
-                <div id="separator"></div>
-                <p>All the papers submitted to the works will undergo an anonymous peer-review process. The selected works will be published in the ACM Digital Library (ISBN: 978-1-4503-8203-8). </p>
-                <div id="separator"></div>
-                <p>However, all accepted Original Works, both in the form of Paper or Poster/Demo submissions, will be presented or demoed during the Asian CHI Symposium sessions.  </p>
-            </div>
-            <div class="showcase" id="showcase">
-                <h4><b>2. Showcase</b></h4>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <p>This category showcases the works that have been accepted to be presented as one of the CHI 2021 tracks (as listed on this <a href="https://chi2021.acm.org/for-authors">page</a>).</p>
-                <div id="separator"></div>
-                <p>This type of work could be submitted as long as they are in line with the goal of the Asian CHI Symposium and have potential to broaden the dissemination of high quality published research and to inspire applications, replications, continuation, spin-offs, and collaboration. </p>
-                <div id="separator"></div>
-                <p>The authors should submit the camera-ready version of their accepted submissions to CHI 2021. There is no need for the authors to follow the Asian CHI Symposium Format.</p>
-                <div id="separator"></div>
-                <p>Their submission to the Asian CHI Symposium will be acknowledged in the Symposium Publication in the ACM Digital Library in the form of the title and author names with a pointer to the corresponding entry in the CHI 2021 Proceedings or Extended Abstract Proceedings.</p>
-                <div id="separator"></div>
-                <p>All accepted showcase submissions will be presented during the Asian CHI Symposium.  </p>
-            </div>
+                    <div lang="english">
+                        Text in English
+                    </div>
+                </div> -->
+                <p>
+                    <span id="english-part">
 
-            <div class="prepare-submission">
-                <h2>Preparing Your Submission</h2>
-                <div id="separator"></div>
-                <p>Authors must submit Original Works in the form of Paper submission (between 5-10 pages) or Poster/Demo submission (max. 4 pages). The number of pages includes references and acknowledgement. The language of the submission must be English</p>
-                <div id="separator"></div>
-                <p>The submission must follow the single-column <a href="https://www.acm.org/publications/taps/word-template-workflow">ACM Master Article Template</a> (in both Word or LaTeX format).  Please read carefully and familiarize yourself with the information about the template above for the initial submission or publication. Failure to comply with the template within the deadlines provided will result in a Desk Rejection of the submission or cancellation of the publication at the ACM Digital Library. </p>
-                <div id="separator"></div>
-                <p>Both the original and showcase submissions should include key references to publicly accessible resources. Authors may also submit a draft of their poster or demo video as supplementary material. Both types of submissions should not be anonymized and must be uploaded through <a href="https://asianchi21.hotcrp.com/">HotCRP</a>.</p>
-
-            </div>
-
-            <div class="selection-process" id="selection-process">
-                <h2>Selection Process</h2>
-                <div id="separator"></div>
-                <p>For the <b> Original Work category</b>, each submission will go through <b>a refereed process</b> and receive two anonymized reviews under the following criteria: Originality; Significance; and Validity. </p>
-                <div id="separator"></div>
-                <p>The submissions under the <b>Showcase category</b>, each submission will be curated by taking into account the following factors: the number of accepted original submissions; the geographical diversity of the attendees; and the diversity of research topics. The decision will be sent to the authors without reviews or light feedback.</p>
-                <div id="separator"></div>
-                <p>For the authors whose Original Works are accepted conditionally and require major revisions, <b>we will provide the Shepherding process</b>. Selected mentors will work closely with authors to improve the quality of the manuscript at and after the symposium. Only shepherded submissions that successfully go through the shepherding process with the approval of the shepherd mentor within the set deadline will be added to the ACM Digital Library. Submissions that require minor or no revisions will be added to the ACM Digital Library proceedings after the camera-ready deadline and confirmation from the Reviewing chairs.</p>
-            </div>
-            <div id="participate-symposium" class="participate-symposium">
-                <h2>Participation in the Symposium</h2>
-                <div id="separator"></div>
-                <p>At least <b>one author</b> of each accepted submission must attend the symposium to present their work. Registration deadlines, fees and conditions of acceptance (such as if workshop attendees must register for a day or more of the main conference) will be informed at a later stage, tentatively before March 2021.</p>
-                <div id="separator"></div>
-                <p>Before the symposium, all accepted submissions must prepare a 5-minute video presentation summarizing their works and submit it to <a href="https://asianchi21.hotcrp.com/">HotCRP</a> at least five days before the event. These will be played during the symposium and followed by a 3-minute live Q&A session. At least one author should join the symposium virtually and answer queries from the attendees. </p>
-                <div id="separator"></div>
-                <p>Authors of accepted poster and demo submissions must submit their final poster document (PDF) and 5-min demo video file at least five days before the symposium so that those can be showcased at the poster/demo session.    
+                        <div id="separator"></div>
+        
+                        <ul class="table-of-content">
+                            <li> <a href="#important-dates" style="text-decoration: none; color: #0667DB;">スケジュール</a> </li>
+                            <li><a href="#themes" style="text-decoration: none; color: #0667DB;" style="border-left: 0px; padding-left: 0">募集テーマ</a></li>
+                            <li> <a href="#submission-details" style="text-decoration: none; color: #0667DB;">投稿形式</a> </li>
+                            <li> <a href="#selection-process" style="text-decoration: none; color: #0667DB;">査読・選考プロセス</a> </li>
+                            <li> <a href="#participate-symposium" style="text-decoration: none; color: #0667DB;">シンポジウムへの参加</a> </li>
+                            <li> <a href="#contacts-cfp" style="text-decoration: none; color: #0667DB;">問い合わせ</a> </li>
+                        </ul>
+                        <br>
+                        <p class="warning-top">※参考訳となります．原文と参考訳の記述に齟齬がある場合は原文の記述が優先されます．</p>
+                        <br>
+                        <p>今回で5回目となるAsian CHI Symposiumは，アジアで実施されたヒューマン・コンピュータ・インタラクション（HCI），ユーザ体験（UX）の研究，またはアジアの社会文化的要素をデザインや実装に取り入れたさまざまな研究を発表するシンポジウムで，毎年CHIカンファレンスと同時に開催されます．本シンポジウムでは，アジア地域特有の問題点やアプローチをグローバルに発信することを目指しています．
+                            <div id="separator"></div>
+                            本シンポジウムでは，アジア内のあらゆるキャリアステージの研究者（例：ベテランの研究者，若手研究者，大学院生，さらにはHCIに興味を持つ学部生）や企業の実務家の参加を歓迎します．また，学部生から博士課程，ポスドク研究者までの若手研究者のネットワークを育成することも目指しています．
+                            <div id="separator"></div>
+                            投稿された論文はブラインド査読方式で査読され，採択された論文は，ACM Digital Libraryに掲載されます(ISBN: 978-1-4503-8203-8)．
+                        </p>
+                        <div id="separator"></div>
+                        <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">投稿する</button>
+                        <!--div class="submission-details">
+                            <h2>Submission Details</h2>
+                            <div class="document">
+                                <img alt="document-icon" src="../icons/document.svg">
+                                <div>
+                                    <h4>Template</h4>
+                                    <a class= "affiliation-link" href="">CHI 2020 Papers Proceeding template</a>
+                                </div>
+                            </div>
+                            <button class="default-button">Make a Submission</button>
+                        </div-->
+                        
+                        </div>
+                        <div id="important-dates" class="important-dates">
+                            <h2>スケジュール</h2>
+                            <p>締切の時間は全て日本時間の23:59 <a class="timezone-link" href="https://24timezones.com/time-zone/gmt+9#gref">(GMT + 09)</a>とします．</p>
+                            </p>
+                            <table class="important-dates-overview">
+                                <tr>
+                                    <th colspan="2">Round 1</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>投稿締切</p>
+                                        <!--p>at 23:59 AoE - Anywhere on Earth</p-->
+                                    </td>
+                                    <td class="important-date">2021年1月28日</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Desk Rejectの通知予定日</p>
+                                    </td>
+                                    <td class="important-date">2021年2月4日</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>採否通知予定日</p>
+                                    </td>
+                                    <td class="important-date">2021年3月9日</td>
+                                </tr>
+                                <!--tr>
+                                    <td>
+                                        <p>Reviews sent to authors</p>
+                                    </td>
+                                    <td class="important-date">February 11, 2020</td>
+                                </tr-->
+                                <tr>
+                                    <th colspan="2">Round 2</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>投稿締切</p>
+                                        <!--p>at 23:59 AoE - Anywhere on Earth</p-->
+                                    </td>
+                                    <td class="important-date">2021年2月25日</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Desk Rejectの通知予定日</p>
+                                    </td>
+                                    <td class="important-date">2021年3月4日</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>採否通知予定日</p>
+                                    </td>
+                                    <td class="important-date">2021年4月6日</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Round1／Round2のカメラレディ論文 提出締切</p>
+                                    </td>
+                                    <td class="important-date">2021年4月20日</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Asian CHI Symposium 2021</p>
+                                    </td>
+                                    <td class="important-date">2021年5月7-8日 </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="themes" class="themes">
+                            <h2>募集テーマ</h2>
+                            <div id="separator"></div>
+                            <p>本シンポジウムでは，以下のHCI分野における研究テーマの発表を募集しています（これらに限定されるわけではありません）．</p>
+                            <div class="themes-points">
+                            <ul>
+                                <li>新しいインタラクティブシステム・インタラクションのデザインや手法</li>
+                                <li>コンピュータとの新たなインタラクションを可能にするハードウェア・ソフトウェア</li>
+                                <li>創造的な活動や表現を支援するための入出力システム</li>
+                                <li>コンピュータとのインタラクションに関するユーザの能力を理解するための研究</li>
+                                <li>技術をより便利に，より使いやすく，より望ましいものにするための知見，実践，方法，構成要素，ツール．</li>
+                                <li>アジアでの顕著な課題を解決するシステムやサービス，それに関するHCIの研究</li>
+                                <li>アジアにおける学習，教育，家庭向けのHCIアプリケーション</li>
+                                <li>遊び心のあるインタラクション，プレイヤー体験，ゲーム</li>
+                                <li>ヘルスケア管理，ウェルネス，医学のためのHCI</li>
+                                <li>産業界におけるHCIとUXの応用</li>
+                                <li>Aその他，HCIコミュニティへインパクトを与える特定の応用分野または関心領域（例：疎外地域社会，障碍，人間以外のステークホルダ，慈善団体，低・中所得者など）</li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div id="submission-details">
+                            <h2>投稿形式</h2>
+                            <div id="separator"></div>
+                            <p>本年は以下の2種類の投稿形式での発表を募集します．</p>
+                            <div class="submission-points">
+                                <ul>
+                                    <li>Original Works</li>
+                                    <li>Showcase</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="original-works" id="original-works">
+                            <h4><b>1. Original Works</b></h4>
+                            <div id="separator"></div>
+                            <p>このカテゴリでは，以下のような新規性のある研究を募集します．</p>
+                            <div class="submission-points">
+                                <ul>
+                                    <li>完成したシステム，および，完了した研究 </li>
+                                    <li>着手段階・途中段階のシステム設計，エンジニアリング，および実証研究</li>
+                                    <li>過去に発表された研究を発展させた，または別の視点からの考察を含む研究</li>
+                                </ul>
+                            </div>
+                            <div id="separator"></div>
+                            <p>Original Worksの投稿は，以下のような形式を選択することができます．</p>
+                            <div class="submission-points">
+                                <ul>
+                                    <li>Paper（5～10ページ，参考文献と謝辞を含む）</li>
+                                    <li>Poster or demo（4ページ以内，参考文献と謝辞を含む）．</li>
+                                </ul>
+                            </div>
+                            <div id="separator"></div>
+                            <p>採択されたOriginal WorksはすべてACMデジタルライブラリに掲載されます．一方，ポスター/デモ投稿の場合は，ACMデジタルライブラリへの掲載を拒否することができます．</p>
+                            <div id="separator"></div>
+                            <p>投稿された論文はすべてブラインド査読方式で査読され．採択された作品は，ACM Digital Library（ISBN: 978-1-4503-8203-8）に掲載されます．</p>
+                            <div id="separator"></div>
+                            <p>ただし，採択の可否に関わらず，投稿されたすべてのOriginal Works（論文またはポスター/デモ投稿の両方）は，Asian CHI Symposiumのセッションにて口頭発表またはデモ発表をしていただきます．</p>
+                        </div>
+                        <div class="showcase" id="showcase">
+                            <h4><b>2. Pameran</b></h4>
+                            <div id="separator"></div>
+                            <div id="separator"></div>
+                            <p>このカテゴリでは，CHI 2021の本会議での発表（<a href="https://chi2021.acm.org/for-authors">このページ</a>に掲載されているもの）として採択された研究を募集します．</p>
+                            <div id="separator"></div>
+                            <p>このタイプの投稿形式には，本シンポジウムの目的に沿っているものであり，かつ，質の高い研究の普及を促進する可能性や，その研究のアプリケーション，再現，研究継続，スピンオフ，コラボレーションを促進する可能性があるものであれば，投稿することができます．</p>
+                            <div id="separator"></div>
+                            <p>著者は，採択された投稿論文のカメラレディ原稿を本シンポジウムに提出する必要があります．Asian CHI Symposiumのフォーマットに従う必要はありません．</p>
+                            <div id="separator"></div>
+                            <p>この投稿形式では，本シンポジウムが発行するACM Digital Libraryの出版物に，投稿された研究のタイトル，著者名，および，対応するCHI 2021 ProceedingsまたはExtended Abstract Proceedingsのエントリへのリンクが掲載されます．</p>
+                            <div id="separator"></div>
+                            <p>また，採択されたすべてのShowcase投稿は，Asian CHI Symposiumで発表いただきます．</p>
+                        </div>
+        
+                        <div class="prepare-submission">
+                            <h2>投稿準備</h2>
+                            <div id="separator"></div>
+                            <p>Original Worksは，Paper（5～10ページ）またはPoster or demo（4ページ以内）のいずれかの方法で投稿してください．ページ数には参考文献と謝辞を含みます．投稿言語は英語のみです．</p>
+                            <div id="separator"></div>
+                            <p>投稿は，シングルカラムの<a href="https://www.acm.org/publications/taps/word-template-workflow">ACM Master Article Template</a> （WordまたはLaTeX形式）に従ってください．初回投稿・掲載の際には，上記のテンプレートについての情報をよくお読みいただき，ご理解の上，ご利用ください．テンプレートに従わなかった場合や締切に間に合わなかった場合，投稿のDesk Rejection，またはACM Digital Libraryへの掲載不可となることがあります．</p>
+                            <div id="separator"></div>
+                            <p>Original WorksとShowcaseのいずれに投稿においても，一般に公開されているリソースへの主要な参考文献を含める必要があります．また，ポスターやデモビデオの草稿を補足資料として提出することもできます．どちらのタイプの投稿も，匿名化されていない状態で，<a href="https://asianchi21.hotcrp.com/">HotCRP</a>を通じてアップロードする必要があります．</p>
+                        </div>
+        
+                        <div class="selection-process" id="selection-process">
+                            <h2>査読・選考プロセス</h2>
+                            <div id="separator"></div>
+                            <p><b>Original Works</b>カテゴリでは，各投稿論文は査読プロセスを経て，オリジナリティ，重要性，妥当性の基準で2人の査読者（ブラインド査読方式）による査読結果が送られます．</p>
+                            <div id="separator"></div>
+                            <p><b>Showcase</b>カテゴリーの場合は，Original Worksの投稿件数，参加者の地理的多様性，研究テーマの多様性などを考慮して選出されます．著者には採否のみを通知し，レビューやフィードバックは送られません．</p>
+                            <div id="separator"></div>
+                            <p>Original Worksの投稿がmajor revisionを必要とする条件付き採択となった場合，シェパーディングプロセスを提供します．すなわち，各投稿にメンターが選出され，シンポジウム時およびシンポジウム終了後に，著者らと緊密に連携して原稿の質を向上させるようにメンターが支援します．設定された期限内にメンターの承認を得てシェパーディングプロセスを無事に通過した投稿のみが，ACM Digital Libraryに掲載されます．</p>
+                            <div id="separator"></div>
+                            <p>minor revisionを必要とする条件付き採択となった投稿は，カメラレディ原稿の提出期限後，査読委員らの確認を経て，ACM Digital Libraryのプロシーディングスに掲載されます．</p>
+                        </div>
+                        <div id="participate-symposium" class="participate-symposium">
+                            <h2>シンポジウムへの参加</h2>
+                            <div id="separator"></div>
+                            <p>採択された研究については，少なくとも1名の著者がシンポジウムに参加し，発表しなければなりません．参加登録の締切日，参加費，参加条件（例えば，シンポジウム参加者は本会議の1日以上の参加登録が必要かどうか等）については，後日，2021年3月までにお知らせします．</p>
+                            <div id="separator"></div>
+                            <p>採択されたすべての研究の著者は，シンポジウム開催の5日前までに，研究を要約した5分間のビデオプレゼンテーションを作成し，<a href="https://asianchi21.hotcrp.com/">HotCRP</a>に提出する必要があります．これらのプレゼンテーションはシンポジウム中に再生され，その後，3分間のライブQ&Aセッションが行われます．少なくとも1名の著者は，シンポジウムにバーチャルで参加し，参加者からの質問に備える必要があります．</p>
+                            <div id="separator"></div>
+                            <p>Poster or demoの投稿が採択された著者は，最終的なポスター原稿（PDF）と5分間のデモビデオファイルをシンポジウムの5日前までに提出し，ポスター/デモセッションで紹介できるようにしてください．</p>
+                        </div>
+                        <div class="have-questions">
+                            <div>
+                            <h3>問い合わせ</h3>
+                            </div>
+                            <div id="contacts-cfp" class="contacts">
+                                <div class="contact">
+                                    <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/josh.jpg">
+                                    <div class="" style="margin-left: 1.5rem;">
+                                        <p style="font-style: bold"><b>Josh (Adi B. Tedjasaputra)</b></p>
+                                        <p class="contact-info">Customer Experience Insight Pty Ltd</p>
+                                        <p class="contact-info"><a href = "mailto:josh@cxinsight.com.au">josh@cxinsight.com.au</a></p>
+                                    </div>
+                                </div>
+                                <div id="separator"></div>
+                                <div class="contact">
+                                    <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/masitah.JPG">
+                                    <div>
+                                    <p style="font-style: bold"><b>Masitah Ghazali</b></p>
+                                    <p class="contact-info">Universiti Teknologi Malaysia</p>
+                                    <p class="contact-info"><a href = "mailto:masitah@utm.my">masitah@utm.my</a></p>
+                                    </div>
+                                </div>
+                                <div id="separator"></div>
+                                <div class="contact">
+                                    <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/sayan.jpg">
+                                    <div>
+                                    <p style="font-style: bold"><b>Sayan Sarcar</b></p>
+                                    <p class="contact-info">University of Tsukuba, Japan</p>
+                                    <p class="contact-info"><a href = "mailto:mailtosayan@gmail.com">mailtosayan@gmail.com</a></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </span>
                 </p>
             </div>
-           <div class="have-questions">
-                <div>
-                  <h3> Have Questions? Contact Our Program Chairs </h3>
-                  <a class="chair-email" href="">paperchairemail@something.com </a>
-                </div>
-                <div class="contacts">
-                  <div class="contact">
-                      <img class="chairs-headshot" alt="program-chair-1" src="./images/chair-placeholder.JPG">
-                        <div>
-                        <p style="font-style: bold"> Lorem Ipsum </p>
-                        <a href="" class="affiliation-link">Affiliation Link</a>
-                      </div>
-                  </div>
-                  <div class="contact">
-                      <img class="chairs-headshot" alt="program-chair-1" src="./images/chair-placeholder.JPG">
-                        <div>
-                        <p style="font-style: bold"> Lorem Ipsum </p>
-                        <a href="" class="affiliation-link">Affiliation Link</a>
-                      </div>
-                  </div>
-                </div>
-            </div>
+            
             </main>
             <footer>
                 <p>Follow Our Social Media</p>
                 <div class="icons">
                     <span id="twitter">
-                        <img class="twitter-icon" alt="twitter-icon" src="./icons/twitter-icon.svg">
+                        <img height="32px" width="32px" class="twitter-icon" alt="twitter-icon" src="icons/twitter-icon.svg">
                     </span>
                     <span id="facebook">
-                        <img class="facebook-icon" alt="facebook-icon" src="./icons/facebook-icon.svg">
+                        <img height="32px" width="32px" class="facebook-icon" alt="facebook-icon" src="icons/facebook-icon.svg">
                     </span>
                 </div>
                 <small>Showcasing Asian ingenuity in addressing local challenges in human-computer interaction research.</small>
-                <small>&copy Copyright 2020 Asian CHI 2021 Symposium. Photo Credit: 2020 Office of the City of Yokohama Representative to the Americas</small>
+                <small>&copy Copyright 2020 Asian CHI Symposium 2021. Photo Credit: 2020 Office of the City of Yokohama Representative to the Americas</small>
             </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+        <script src="app.js"></script>
     </body>
 </html>
