@@ -30,42 +30,43 @@
         </div>
         <header>
             <nav>
-                <div class="logo">
+                <div class="logo nav-item">
                     <a href="./index.html">ASIAN CHI SYMPOSIUM 2021</a>
                 </div>
-                <ul class="nav-links">
-                    <li>
+                <ul class="nav-links nav-menu">
+                    <li class="nav-item">
                         <a href="./index.html">Home</a>
                     </li>
-                    <li class="dropdown">
-                        <button class="dropbtn">Call for Papers
+                    <li class="dropdown nav-item sub-nav">
+                        <button class="dropbtn sub-nav-group">Call for Papers
                             <span>
                                 <img height="8px" width="8px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
                             </span>
                         </button>
-                        <div class="dropdown-content">
+                        <ul class="dropdown-content sub-nav-group">
                             <a href="./cfpEn.html">English</a>
                             <a href="./cfpCh.html">Chinese</a>
                             <a href="./cfpMalay.html">Malay</a>
                             <a href="./cfpJp.html">Japanese</a>
                             <a href="./cfpId.html">Bahasa Indonesia</a>
-                        </div>
+                        </ul>
                         <!-- <a href="./cfpEn.html">Call For Paper (EN)</a> -->
                     </li>
-                    <li class="cfp-languages">
+                    <li class="cfp-languages nav-item">
                         <p>Call for Papers</p>
-                        <ul>
+                        <ul class="sub-nav-group">
                             <li><a href="./cfpEn.html">English</a></li>
                             <li><a href="./cfpCh.html">Chinese</a></li>
                             <li><a href="./cfpMalay.html">Malay</a></li>
                             <li><a href="./cfpJp.html">Japanese</a></li>
                             <li><a href="./cfpId.html">Bahasa Indonesia</a></li>
+                            
                         </ul>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="./organizers.html">Organizers</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="./pastEvents.html">Past Events</a>
                     </li>
                 </ul>
@@ -113,7 +114,7 @@
                 <div id="separator"></div>
                 <p>In 2020, we organized the Asian CHI Symposium 2020 virtually due to the Covid-19 pandemic successfully. The story from the organizer can be found <a href="https://sigchi.org/wp-content/uploads/2021/01/31-July-2020-SIGCHI_Chapter_Newsletter_July2020.pdf">here</a>. At CHI 2021, we will organize the second virtual Asian CHI symposium online instead of in Yokohama, Japan. Please check the accepted workshops at CHI <a href="https://chi2021.acm.org/for-authors/interacting-discussing/workshops-symposia/accepted-workshops-symposiums">here</a>. </p>
                 <div id="separator"></div>
-                <p>The accepted workshop proposal can be found here (Masitah to add). If you are interested in submitting, please check this <a href="./cfpEn.html">Call for Paper (English)</a>. Selected work will be published at <a href="https://dl.acm.org/">ACM Digital Library</a> (ISBN: 978-1-4503-8203-8).</p>
+                <p>The accepted workshop proposal can be found here. If you are interested in submitting, please check this <a href="./cfpEn.html">Call for Paper (English)</a>. Selected work will be published at <a href="https://dl.acm.org/">ACM Digital Library</a> (ISBN: 978-1-4503-8203-8).</p>
             </div>
             <div class="important-dates-side">
                 <hr class="separator-important">
@@ -122,7 +123,7 @@
                 <ul class="round-list">
                     <li>Submission Deadline: <br><b>January 28th, 2021</b></li>
                     <li>Desk Reject Notification: <br><b>February 4th, 2021</b></li>
-                    <li>Notification to the Authors: <br><b>March 9th, 2021</b></li>
+                    <li>Notification of Acceptance: <br><b>March 9th, 2021</b></li>
                 </ul>
                 <div id="separator"></div>
                 <p><b>Round 2</b></p>
@@ -156,5 +157,11 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="app.js"></script>
+
+        <!-- include jquery -->
+        <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <!-- include the jquery-accessibleMegaMenu plugin script -->
+        <script src="js/jquery-accessibleMegaMenu.js"></script>
     </body>
 </html>

@@ -170,7 +170,7 @@ nav{
         padding: 2em;
         position: absolute;
         right: 0px;
-        height: 80vh;
+        height: 100vh;
         top: 6vh;
         background-color: #02287A;
         width: 100%;
@@ -1406,3 +1406,7 @@ small{
   .cfp-languages ul {
       list-style: none;
   }
+
+
+  /* Navbar accessibility */
+  /* mega menu list */
