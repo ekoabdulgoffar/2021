@@ -7,9 +7,9 @@
         <meta name="description" content="Asian CHI 2021 Symposium">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Asian CHI 2021 Symposium</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="loader-wrapper">
@@ -20,196 +20,183 @@
                 <img width="24px" height="24px" class="up-arrow" alt="up-arrow" src="icons/up-arrow.svg">
             </span>
         </button>
+        <div class="accessibility-icons">
+            <div class="text-size">
+
+            </div>
+            <div class="contrast">
+                
+            </div>
+        </div>
         <header>
             <nav>
-                <div class="logo">
+                <div class="logo nav-item">
                     <a href="./index.html">ASIAN CHI SYMPOSIUM 2021</a>
                 </div>
-                <ul class="nav-links">
-                    <li>
+                <ul class="nav-links nav-menu">
+                    <!-- <li class="nav-item">
+                        <a href="./index.html">Asian CHI Symposium</a>
+                    </li> -->
+                    <li class="nav-item">
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="dropdown">
                         <button class="dropbtn">Call for Papers
                             <span>
-                                <img height="8px" width="8px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
+                                <img height="8px" width="10px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
                             </span>
                         </button>
-                        <div class="dropdown-content">
+                        <ul class="dropdown-content dropdown_menu--animated">
                             <a href="./cfpEn.html">English</a>
                             <a href="./cfpCh.html">Chinese</a>
                             <a href="./cfpMalay.html">Malay</a>
                             <a href="./cfpJp.html">Japanese</a>
+                            <a href="./cfpKr.html">Korean</a>
                             <a href="./cfpId.html">Bahasa Indonesia</a>
-                        </div>
+                        </ul>
                         <!-- <a href="./cfpEn.html">Call For Paper (EN)</a> -->
                     </li>
-                    <li class="cfp-languages">
+                    <li class="cfp-languages nav-item">
                         <p>Call for Papers</p>
-                        <ul>
+                        <ul class="sub-nav-group dropdown-menu dropdown_menu--animated ">
                             <li><a href="./cfpEn.html">English</a></li>
                             <li><a href="./cfpCh.html">Chinese</a></li>
                             <li><a href="./cfpMalay.html">Malay</a></li>
                             <li><a href="./cfpJp.html">Japanese</a></li>
+                            <li><a href="./cfpKr.html">Korean</a></li>
                             <li><a href="./cfpId.html">Bahasa Indonesia</a></li>
+                            
                         </ul>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="./organizers.html">Organizers</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="./pastEvents.html">Past Events</a>
                     </li>
                 </ul>
                 <div class="burger-menu">
-                    <!-- <img id="menu-icon" src="icons/menu.svg" alt="burger-menu"> -->
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
             </nav>
-            <div class="header-picture">
+            <div class="container header-picture">
+                <!-- <div class="header__bg"></div> -->
+                <div class="multiply-picture"></div>
+                <div class="text-title">
+                    <ul>
+                        <li><h1>Call for Paper (Bahasa Indonesia)</h1></li>
+                    </ul>
+                </div>
                 <div class="multiply-picture">
-                    <!-- <img class="header-image" alt="yokohama-header" src="images/yokohama-header.jpg"> -->
-                    <div class="text-title">
-                        <ul>
-                            <li><h1>Call for Paper (Bahasa Indonesia)</h1></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" preserveAspectRatio="none">
+                <circle fill="white" cx="0" cy="100" r="100" />
+                <circle fill="white" cx="200" cy="100" r="100" />
+            </svg> -->
         </header>
-        <div class="shadow-background"></div>
-        <script src="../app.js"></script>
+        <script src="app.js"></script>
 
         <main>
-            <div class="main-container">
-                <!-- <form>
-                    <label for="lang-switch">
-                        <span lang="chinese"><b>语言: </b></span>
-                        <span lang="english"><b>Language: </b></span>
-                    </label>
-                    <select id="lang-switch">
-                        <option value="english" selected>English</option>
-                        <option value="chinese">中文</option>
-                    </select>
-                </form> -->
-                
-                <!-- <div>
-                    <div lang="chinese">
-                        한국어 텍스트
-                    </div>
-                    <div lang="english">
-                        Text in English
-                    </div>
-                </div> -->
-                <p>
-                    <span id="english-part">
-
+            <p>
+            <span id="english-part">
+            <div class="mainpage-content">
+                <div></div>
+                <div class="cfp-content">
+                    <ul class="table-of-content">
+                        <li> <a href="#important-dates" style="text-decoration: none; color: #0667DB;">Tanggal Penting</a> </li>
+                        <li><a href="#themes" style="text-decoration: none; color: #0667DB;" style="border-left: 0px; padding-left: 0">Tema</a></li>
+                        <li> <a href="#submission-details" style="text-decoration: none; color: #0667DB;">Jenis Naskah</a> </li>
+                        <li> <a href="#selection-process" style="text-decoration: none; color: #0667DB;">Persiapan Naskah</a> </li>
+                        <li> <a href="#participate-symposium" style="text-decoration: none; color: #0667DB;">Keikutsertaan</a> </li>
+                        <li> <a href="#contacts-cfp" style="text-decoration: none; color: #0667DB;">Kontak</a> </li>
+                    </ul>
+                    <br>
+                    <p>The 5th Asian CHI Symposium adalah simposium tahunan yang diselenggarakan bersama dengan konferensi CHI untuk memamerkan karya mutakhir di bidang interaksi manusia-komputer dan pengalaman pengguna di wilayah Asia dan karya yang memiliki fokus pada penyatuan faktor sosial budaya Asia pada proses desain dan implementasinya. Simposium ini mempromosikan masalah dan pendekatan unik pada wilayah ini pada komunitas global. 
+                    <div id="separator"></div>
+                    <p>Kami mendorong partisipasi peneliti dan praktisi dari komunitas profesional dan akademis Asia di semua tahap karir (baik akademisi berpengalaman, peneliti pemula, mahasiswa pascasarjana, bahkan mahasiswa sarjana yang memiliki minat di bidang HCI dan UX) dari komunitas Asia untuk menjadi bagian dari simposium ini. Simposium ini juga diselenggarakan untuk menjalin jaringan peneliti muda baik dari mahasiswa di jenjang sarjana hingga kandidat doktor, lulusan baru, dan peneliti <i>post-doctoral</i>. </p>
+                    <div id="separator"></div>
+                    <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">Make a Submission</button>
+                </div>
+                <div></div>
+            </div> 
+            <div id="important-dates" class="mainpage-content important-dates">
+                <div></div>
+                <div>
+                    <h2>Tanggal Penting</h2>
+                    <p>Pengiriman naskah untuk setiap tenggat waktu dilakukan paling lambat pukul 21:59 WIB <a class="timezone-link" href="https://24timezones.com/time-zone/gmt+7#gref">(GMT+7)</a> atau 23:59 waktu Jepang <a class="timezone-link" href="https://24timezones.com/time-zone/gmt+9#gref">(GMT+9)</a></p>
+                    <table class="important-dates-overview">
+                        <tbody>
+                            <tr>
+                                <th colspan="2">Ronde 1</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Tenggat Waktu Pengiriman Naskah</p>
+                                </td>
+                                <td class="important-date">28 Januari 2021</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Notifikasi Penolakan <i>(Desk Reject)</i></p>
+                                </td>
+                                <td class="important-date">4 Februari 2021</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Pengiriman Notifikasi kepada Penulis</p>
+                                </td>
+                                <td class="important-date">9 Maret 2021</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Ronde 2</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Tenggat Waktu Pengiriman Naskah</p>
+                                </td>
+                                <td class="important-date">25 Februari 2021</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Notifikasi Penolakan <i>(Desk Reject)</i></p>
+                                </td>
+                                <td class="important-date">4 Maret 2021</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Pengiriman Notifikasi kepada Penulis</p>
+                                </td>
+                                <td class="important-date">6 April 2021</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Pengiriman Naskah Final <i>(Camera Ready)</i> untuk Ronde 1 dan Ronde 2</p>
+                                </td>
+                                <td class="important-date">20 April 2021</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Asian CHI Symposium 2021</p>
+                                </td>
+                                <td class="important-date">7-8 Mei 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div></div>
+            </div>
+            <div class="mainpage-content">
+                <div></div>
+                <div class="submission-content">
+                    <div id="themes" class="themes">
+                        <h2>Tema</h2>
                         <div id="separator"></div>
-        
-                        <ul class="table-of-content">
-                            <li> <a href="#important-dates" style="text-decoration: none; color: #0667DB;">Tanggal Penting</a> </li>
-                            <li><a href="#themes" style="text-decoration: none; color: #0667DB;" style="border-left: 0px; padding-left: 0">Tema</a></li>
-                            <li> <a href="#submission-details" style="text-decoration: none; color: #0667DB;">Jenis Naskah</a> </li>
-                            <li> <a href="#selection-process" style="text-decoration: none; color: #0667DB;">Persiapan Naskah</a> </li>
-                            <li> <a href="#participate-symposium" style="text-decoration: none; color: #0667DB;">Keikutsertaan</a> </li>
-                            <li> <a href="#contacts-cfp" style="text-decoration: none; color: #0667DB;">Kontak</a> </li>
-                        </ul>
-                        <br>
-                        <p>The 5th Asian CHI Symposium adalah simposium tahunan yang diselenggarakan bersama dengan konferensi CHI untuk memamerkan karya mutakhir di bidang interaksi manusia-komputer dan pengalaman pengguna di wilayah Asia dan karya yang memiliki fokus pada penyatuan faktor sosial budaya Asia pada proses desain dan implementasinya. Simposium ini mempromosikan masalah dan pendekatan unik pada wilayah ini pada komunitas global. 
-                            <div id="separator"></div>
-                            Kami mendorong partisipasi peneliti dan praktisi dari komunitas profesional dan akademis Asia di semua tahap karir (baik akademisi berpengalaman, peneliti pemula, mahasiswa pascasarjana, bahkan mahasiswa sarjana yang memiliki minat di bidang HCI dan UX) dari komunitas Asia untuk menjadi bagian dari simposium ini. Simposium ini juga diselenggarakan untuk menjalin jaringan peneliti muda baik dari mahasiswa di jenjang sarjana hingga kandidat doktor, lulusan baru, dan peneliti <i>post-doctoral</i>. 
-                        </p>
+                        <p>Kami mengundang Anda untuk mengirimkan naskah yang memiliki kontribusi dan/atau sesuai dengan tema penelitian di bidang interaksi manusia-komputer, yang meliputi namun tidak terbatas pada:</p>
                         <div id="separator"></div>
-                        <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">Kirimkan Naskah Anda</button>
-                        <!--div class="submission-details">
-                            <h2>Submission Details</h2>
-                            <div class="document">
-                                <img alt="document-icon" src="../icons/document.svg">
-                                <div>
-                                    <h4>Template</h4>
-                                    <a class= "affiliation-link" href="">CHI 2020 Papers Proceeding template</a>
-                                </div>
-                            </div>
-                            <button class="default-button">Make a Submission</button>
-                        </div-->
-                        
-                        </div>
-                        <div id="important-dates" class="important-dates">
-                            <h2>Tanggal Penting</h2>
-                            <p>Pengiriman naskah untuk setiap tenggat waktu dilakukan paling lambat pukul 21:59 WIB <a class="timezone-link" href="https://24timezones.com/time-zone/gmt+7#gref">(GMT+7)</a> atau 23:59 waktu Jepang <a class="timezone-link" href="https://24timezones.com/time-zone/gmt+9#gref">(GMT+9)</a></p>
-                            </p>
-                            <table class="important-dates-overview">
-                                <tr>
-                                    <th colspan="2">Ronde 1</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Tenggat Waktu Pengiriman Naskah</p>
-                                        <!--p>at 23:59 AoE - Anywhere on Earth</p-->
-                                    </td>
-                                    <td class="important-date">28 Januari 2021</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Notifikasi Penolakan <i>(Desk Reject)</i></p>
-                                    </td>
-                                    <td class="important-date">4 Februari 2021</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Pengiriman Notifikasi kepada Penulis</p>
-                                    </td>
-                                    <td class="important-date">9 Maret 2021</td>
-                                </tr>
-                                <!--tr>
-                                    <td>
-                                        <p>Reviews sent to authors</p>
-                                    </td>
-                                    <td class="important-date">February 11, 2020</td>
-                                </tr-->
-                                <tr>
-                                    <th colspan="2">Ronde 2</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Tenggat Waktu Pengiriman Naskah</p>
-                                        <!--p>at 23:59 AoE - Anywhere on Earth</p-->
-                                    </td>
-                                    <td class="important-date">25 Februari 2021</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Notifikasi Penolakan <i>(Desk Reject)</i></p>
-                                    </td>
-                                    <td class="important-date">4 Maret 2021</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Pengiriman Notifikasi kepada Penulis</p>
-                                    </td>
-                                    <td class="important-date">6 April 2021</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Pengiriman Naskah Final <i>(Camera Ready)</i> untuk Ronde 1 dan Ronde 2</p>
-                                    </td>
-                                    <td class="important-date">20 April 2021</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Asian CHI Symposium 2021</p>
-                                    </td>
-                                    <td class="important-date">7-8 Mei 2021</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div id="themes" class="themes">
-                            <h2>Tema</h2>
-                            <div id="separator"></div>
-                            <p>Kami mengundang Anda untuk mengirimkan naskah yang memiliki kontribusi dan/atau sesuai dengan tema penelitian di bidang interaksi manusia-komputer, yang meliputi namun tidak terbatas pada:</p>
-                            <div class="themes-points">
+                        <div class="themes-points">
                             <ul>
                                 <li>Kebaruan pada sistem interaksi serta desain dan teknik interaksi;</li>
                                 <li>Kebaruan perangkat keras maupun perangkat lunak untuk mendukung bentuk interaksi baru dengan komputer;</li>
@@ -225,11 +212,12 @@
                                 <li>Penerapan spesifik pada area atau domain yang memiliki dampak signifikan bagi masyarakat, misalnya: masyarakat termarjinalkan, penyandang disabilitas, non-manusia, kegiatan amal, masyarakat berpenghasilan rendah dan menengah, dll.</li>
                             </ul>
                         </div>
-                        </div>
+                        <div id="line-separator"></div>
                         <div id="submission-details">
                             <h2>Jenis Naskah</h2>
                             <div id="separator"></div>
                             <p>Pada tahun ini, kami menerima dua (2) jenis naskah:</p>
+                            <div id="separator"></div>
                             <div class="submission-points">
                                 <ul>
                                     <li>Karya Orisinal</li>
@@ -237,10 +225,12 @@
                                 </ul>
                             </div>
                         </div>
+                        <div id="line-separator"></div>
                         <div class="original-works" id="original-works">
                             <h4><b>1. Karya Orisinal</b></h4>
                             <div id="separator"></div>
                             <p>Jenis naskah ini meliputi karya mutakhir yang termasuk dalam:</p>
+                            <div id="separator"></div>
                             <div class="submission-points">
                                 <ul>
                                     <li>Studi atau sistem yang telah rampung, </li>
@@ -248,24 +238,25 @@
                                     <li>Perluasan atau diskusi/pandangan alternatif dari karya yang telah dipublikasikan sebelumnya.</li>
                                 </ul>
                             </div>
-                            <div id="separator"></div>
+                            <br>
                             <p>Untuk naskah dalam bentuk Karya Orisinal, penulis dapat memilih untuk mengirimkan naskah dalam bentuk:</p>
+                            <div id="separator"></div>
                             <div class="submission-points">
                                 <ul>
                                     <li>Paper (5-10 halaman, termasuk daftar pustaka dan ucapan terima kasih).</li>
                                     <li>Poster atau demo (maksimal 4 halaman termasuk daftar pustaka dan ucapan terima kasih).</li>
                                 </ul>
                             </div>
-                            <div id="separator"></div>
+                            <br>
                             <p>Seluruh naskah dalam bentuk paper yang berupa Karya Orisinal akan dipublikasikan di ACM Digital Library. Untuk naskah dalam bentuk poster atau demo, penulis dapat memilih untuk tidak mempublikasikan karya tersebut ke ACM Digital Library.</p>
                             <div id="separator"></div>
                             <p>Seluruh naskah yang diterima akan diulas oleh mitra bestari secara anonim. Naskah terpilih akan dipublikasikan pada ACM Digital Library (ISBN: 978-1-4503-8203-8).</p>
                             <div id="separator"></div>
                             <p>Akan tetapi, seluruh Karya Orisinal, baik dalam bentuk Paper atau Poster/Demo, wajib dipresentasikan atau didemokan selama sesi Asian CHI Symposium berlangsung.</p>
                         </div>
+                        <div id="line-separator"></div>
                         <div class="showcase" id="showcase">
                             <h4><b>2. Pameran</b></h4>
-                            <div id="separator"></div>
                             <div id="separator"></div>
                             <p>Kategori ini memamerkan hasil pekerjaan yang telah diterima untuk dipresentasikan pada salah satu trek di CHI 2021 (seperti tercantum pada <a href="https://chi2021.acm.org/for-authors">halaman</a> berikut).</p>
                             <div id="separator"></div>
@@ -277,7 +268,7 @@
                             <div id="separator"></div>
                             <p>Seluruh karya pameran yang diterima akan dipresentasikan selama sesi Asian CHI Symposium berlangsung.</p>
                         </div>
-        
+                        <div id="line-separator"></div>
                         <div class="prepare-submission">
                             <h2>Persiapan Naskah</h2>
                             <div id="separator"></div>
@@ -287,7 +278,7 @@
                             <div id="separator"></div>
                             <p>Baik Karya Orisinil ataupun Pameran harus mencantumkan referensi dan literatur utama yang dapat diakses secara publik. Penulis dapat mengirimkan draf poster atau video demo sebagai material pendukung. Kedua jenis naskah tidak boleh ditulis secara anonim dan harus dikirim melalui <a href="https://asianchi21.hotcrp.com/">HotCRP</a>.</p>
                         </div>
-        
+                        <div id="line-separator"></div>
                         <div class="selection-process" id="selection-process">
                             <h2>Proses Seleksi</h2>
                             <div id="separator"></div>
@@ -297,6 +288,7 @@
                             <div id="separator"></div>
                             <p>Untuk penulis Karya Orisinal yang diterima dengan syarat dan memerlukan perbaikan mayor, <b>kami akan menyediakan proses Shepherding</b>. Penulis akan bekerja bersama para mentor untuk meningkatkan kualitas naskah pada saat dan setelah simposium berlangsung. Hanya naskah yang berhasil melewati proses Shepherding dan disetujui oleh mentor pada tenggat waktu yang diberikan akan dimasukkan ke ACM Digital Library. Naskah yang memerlukan revisi minor atau tanpa revisi akan dimasukkan ke prosiding ACM Digital Library setelah tenggat waktu  versi final <i>(camera-ready)</i> dan konfirmasi dari Reviewing Chairs.</p>
                         </div>
+                        <div id="line-separator"></div>
                         <div id="participate-symposium" class="participate-symposium">
                             <h2>Keikutsertaan di Simposium</h2>
                             <div id="separator"></div>
@@ -306,58 +298,68 @@
                             <div id="separator"></div>
                             <p>Penulis dari Poster/Demo harus mengirimkan poster final dalam bentuk PDF dan video berdurasi lima menit setidaknya lima hari sebelum simposium agar keduanya dapat dipamerkan pada saat sesi poster/demo.</p>
                         </div>
+                        <div id="line-separator"></div>
                         <div class="have-questions">
-                            <div>
-                            <h3>Hubungi Kami</h3>
-                            </div>
+                            <h2>Contact Us</h2>
+                            <div id="separator"></div>
                             <div id="contacts-cfp" class="contacts">
-                                <div class="contact">
-                                    <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/josh.jpg">
-                                    <div class="" style="margin-left: 1.5rem;">
-                                        <p style="font-style: bold"><b>Josh (Adi B. Tedjasaputra)</b></p>
-                                        <p class="contact-info">Customer Experience Insight Pty Ltd</p>
-                                        <p class="contact-info"><a href = "mailto:josh@cxinsight.com.au">josh@cxinsight.com.au</a></p>
+                                <div class="contact row1">
+                                    <div class="contact josh">
+                                        <img width="120px" height="120px" class="chair-picture" alt="general-chair-name" src="images/josh.jpg">
+                                        <div class="info-container">
+                                            <p style="font-style: bold"><b>Josh (Adi B. Tedjasaputra)</b></p>
+                                            <p class="contact-info">Customer Experience Insight Pty Ltd</p>
+                                            <p class="contact-info"><a href = "mailto:josh@cxinsight.com.au">josh@cxinsight.com.au</a></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="separator"></div>
-                                <div class="contact">
-                                    <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/masitah.JPG">
-                                    <div>
-                                    <p style="font-style: bold"><b>Masitah Ghazali</b></p>
-                                    <p class="contact-info">Universiti Teknologi Malaysia</p>
-                                    <p class="contact-info"><a href = "mailto:masitah@utm.my">masitah@utm.my</a></p>
+                                    <div class="contact masitah">
+                                        <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/masitah.JPG">
+                                        <div class="info-container">
+                                            <p style="font-style: bold"><b>Masitah Ghazali</b></p>
+                                            <p class="contact-info">Universiti Teknologi Malaysia</p>
+                                            <p class="contact-info"><a href = "mailto:masitah@utm.my">masitah@utm.my</a></p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div id="separator"></div>
                                 <div class="contact">
                                     <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/sayan.jpg">
-                                    <div>
-                                    <p style="font-style: bold"><b>Sayan Sarcar</b></p>
-                                    <p class="contact-info">University of Tsukuba, Japan</p>
-                                    <p class="contact-info"><a href = "mailto:mailtosayan@gmail.com">mailtosayan@gmail.com</a></p>
+                                    <div class="info-container">
+                                        <p style="font-style: bold"><b>Sayan Sarcar</b></p>
+                                        <p class="contact-info">University of Tsukuba, Japan</p>
+                                        <p class="contact-info"><a href = "mailto:mailtosayan@gmail.com">mailtosayan@gmail.com</a></p>
                                     </div>
                                 </div>
                         </div>
-                    </span>
-                </p>
-            </div>
-            
-            </main>
-            <footer>
-                <p>Follow Our Social Media</p>
-                <div class="icons">
-                    <span id="twitter">
-                        <img height="32px" width="32px" class="twitter-icon" alt="twitter-icon" src="icons/twitter-icon.svg">
-                    </span>
-                    <span id="facebook">
-                        <img height="32px" width="32px" class="facebook-icon" alt="facebook-icon" src="icons/facebook-icon.svg">
-                    </span>
+                    </div>
                 </div>
-                <small>Showcasing Asian ingenuity in addressing local challenges in human-computer interaction research.</small>
-                <small>&copy Copyright 2020 Asian CHI Symposium 2021. Photo Credit: 2020 Office of the City of Yokohama Representative to the Americas</small>
-            </footer>
+                <div></div>
+            </div> 
+            </span>
+        </p>
+        </main>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+        <footer>
+            <p>Follow Our Social Media</p>
+            <div class="icons">
+                <span id="twitter">
+                    <img height="32px" width="32px" class="twitter-icon" alt="twitter-icon" src="icons/twitter-icon.svg">
+                </span>
+                <span id="facebook">
+                    <img height="32px" width="32px" class="facebook-icon" alt="facebook-icon" src="icons/facebook-icon.svg">
+                </span>
+            </div>
+            <small>Showcasing Asian ingenuity in addressing local challenges in Human-computer Interaction research.</small>
+            <small>&copy Copyright 2020 Asian CHI Symposium 2021. Photo Credit: 2020 Office of the City of Yokohama Representative to the Americas</small>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="app.js"></script>
+
+        <!-- include jquery -->
+        <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <!-- include the jquery-accessibleMegaMenu plugin script -->
+        <script src="js/jquery-accessibleMegaMenu.js"></script>
     </body>
 </html>

@@ -7,9 +7,9 @@
         <meta name="description" content="Asian CHI 2021 Symposium">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Asian CHI 2021 Symposium</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="loader-wrapper">
@@ -20,200 +20,185 @@
                 <img width="24px" height="24px" class="up-arrow" alt="up-arrow" src="icons/up-arrow.svg">
             </span>
         </button>
+        <div class="accessibility-icons">
+            <div class="text-size">
+
+            </div>
+            <div class="contrast">
+                
+            </div>
+        </div>
         <header>
             <nav>
-                <div class="logo">
+                <div class="logo nav-item">
                     <a href="./index.html">ASIAN CHI SYMPOSIUM 2021</a>
                 </div>
-                <ul class="nav-links">
-                    <li>
+                <ul class="nav-links nav-menu">
+                    <!-- <li class="nav-item">
+                        <a href="./index.html">Asian CHI Symposium</a>
+                    </li> -->
+                    <li class="nav-item">
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="dropdown">
                         <button class="dropbtn">Call for Papers
                             <span>
-                                <img height="8px" width="8px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
+                                <img height="8px" width="10px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
                             </span>
                         </button>
-                        <div class="dropdown-content">
+                        <ul class="dropdown-content dropdown_menu--animated">
                             <a href="./cfpEn.html">English</a>
                             <a href="./cfpCh.html">Chinese</a>
                             <a href="./cfpMalay.html">Malay</a>
                             <a href="./cfpJp.html">Japanese</a>
+                            <a href="./cfpKr.html">Korean</a>
                             <a href="./cfpId.html">Bahasa Indonesia</a>
-                        </div>
+                        </ul>
                         <!-- <a href="./cfpEn.html">Call For Paper (EN)</a> -->
                     </li>
-                    <li class="cfp-languages">
+                    <li class="cfp-languages nav-item">
                         <p>Call for Papers</p>
-                        <ul>
+                        <ul class="sub-nav-group dropdown-menu dropdown_menu--animated ">
                             <li><a href="./cfpEn.html">English</a></li>
                             <li><a href="./cfpCh.html">Chinese</a></li>
                             <li><a href="./cfpMalay.html">Malay</a></li>
                             <li><a href="./cfpJp.html">Japanese</a></li>
+                            <li><a href="./cfpKr.html">Korean</a></li>
                             <li><a href="./cfpId.html">Bahasa Indonesia</a></li>
+                            
                         </ul>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="./organizers.html">Organizers</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="./pastEvents.html">Past Events</a>
                     </li>
                 </ul>
                 <div class="burger-menu">
-                    <!-- <img id="menu-icon" src="icons/menu.svg" alt="burger-menu"> -->
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
             </nav>
-            <div class="header-picture">
+            <div class="container header-picture">
+                <!-- <div class="header__bg"></div> -->
+                <div class="multiply-picture"></div>
+                <div class="text-title">
+                    <ul>
+                        <li><h1>Call for Paper (Japanese)</h1></li>
+                    </ul>
+                </div>
                 <div class="multiply-picture">
-                    <!-- <img class="header-image" alt="yokohama-header" src="images/yokohama-header.jpg"> -->
-                    <div class="text-title">
-                        <ul>
-                            <li><h1>Call for Paper (Japanese)</h1></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" preserveAspectRatio="none">
+                <circle fill="white" cx="0" cy="100" r="100" />
+                <circle fill="white" cx="200" cy="100" r="100" />
+            </svg> -->
         </header>
-        <div class="shadow-background"></div>
-        <script src="../app.js"></script>
+        <script src="app.js"></script>
 
         <main>
-            <div class="main-container">
-                <!-- <form>
-                    <label for="lang-switch">
-                        <span lang="chinese"><b>语言: </b></span>
-                        <span lang="english"><b>Language: </b></span>
-                    </label>
-                    <select id="lang-switch">
-                        <option value="english" selected>English</option>
-                        <option value="chinese">中文</option>
-                    </select>
-                </form> -->
-                
-                <!-- <div>
-                    <div lang="chinese">
-                        한국어 텍스트
-                    </div>
-                    <div lang="english">
-                        Text in English
-                    </div>
-                </div> -->
-                <p>
-                    <span id="english-part">
-
+            <p>
+            <span id="english-part">
+            <div class="mainpage-content">
+                <div></div>
+                <div class="cfp-content">
+                    <ul class="table-of-content">
+                        <li> <a href="#important-dates" style="text-decoration: none; color: #0667DB;">スケジュール</a> </li>
+                        <li><a href="#themes" style="text-decoration: none; color: #0667DB;" style="border-left: 0px; padding-left: 0">募集テーマ</a></li>
+                        <li> <a href="#submission-details" style="text-decoration: none; color: #0667DB;">投稿形式</a> </li>
+                        <li> <a href="#selection-process" style="text-decoration: none; color: #0667DB;">査読・選考プロセス</a> </li>
+                        <li> <a href="#participate-symposium" style="text-decoration: none; color: #0667DB;">シンポジウムへの参加<</a> </li>
+                        <li> <a href="#contacts-cfp" style="text-decoration: none; color: #0667DB;">問い合わせ</a> </li>
+                    </ul>
+                    <br>
+                    <p class="warning-top">※参考訳となります．原文と参考訳の記述に齟齬がある場合は原文の記述が優先されます．</p>
+                    <br>
+                    <p>今回で5回目となるAsian CHI Symposiumは，アジアで実施されたヒューマン・コンピュータ・インタラクション（HCI），ユーザ体験（UX）の研究，またはアジアの社会文化的要素をデザインや実装に取り入れたさまざまな研究を発表するシンポジウムで，毎年CHIカンファレンスと同時に開催されます．本シンポジウムでは，アジア地域特有の問題点やアプローチをグローバルに発信することを目指しています．</p>
+                    <div id="separator"></div>
+                    <p>投稿された論文はブラインド査読方式で査読され，採択された論文は，ACM Digital Libraryに掲載されます(ISBN: 978-1-4503-8203-8)．</p>
+                    <div id="separator"></div>
+                    <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">投稿する</button>
+                </div>
+                <div></div>
+            </div> 
+            <div id="important-dates" class="mainpage-content important-dates">
+                <div></div>
+                <div>
+                    <h2>スケジュール</h2>
+                    <p>締切の時間は全て日本時間の23:59 <a class="timezone-link" href="https://24timezones.com/time-zone/gmt+9#gref">(GMT + 09)</a>とします．</p>
+                    <table class="important-dates-overview">
+                        <tbody>
+                            <tr>
+                                <th colspan="2">Round 1</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>投稿締切</p>
+                                </td>
+                                <td class="important-date">2021年1月28日</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p> Desk Rejection Notification</p>
+                                </td>
+                                <td class="important-date">2021年2月4日</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>採否通知予定日</p>
+                                </td>
+                                <td class="important-date">2021年3月9日</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Round 2</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>投稿締切</p>
+                                </td>
+                                <td class="important-date">2021年2月25日</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Desk Rejectの通知予定日</p>
+                                </td>
+                                <td class="important-date">2021年3月4日</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>採否通知予定日</p>
+                                </td>
+                                <td class="important-date">2021年4月6日</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Round1／Round2のカメラレディ論文 提出締切</p>
+                                </td>
+                                <td class="important-date">2021年4月20日</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Asian CHI Symposium 2021</p>
+                                </td>
+                                <td class="important-date">2021年5月7-8日 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div></div>
+            </div>
+            <div class="mainpage-content">
+                <div></div>
+                <div class="submission-content">
+                    <div id="themes" class="themes">
+                        <h2>募集テーマ</h2>
                         <div id="separator"></div>
-        
-                        <ul class="table-of-content">
-                            <li> <a href="#important-dates" style="text-decoration: none; color: #0667DB;">スケジュール</a> </li>
-                            <li><a href="#themes" style="text-decoration: none; color: #0667DB;" style="border-left: 0px; padding-left: 0">募集テーマ</a></li>
-                            <li> <a href="#submission-details" style="text-decoration: none; color: #0667DB;">投稿形式</a> </li>
-                            <li> <a href="#selection-process" style="text-decoration: none; color: #0667DB;">査読・選考プロセス</a> </li>
-                            <li> <a href="#participate-symposium" style="text-decoration: none; color: #0667DB;">シンポジウムへの参加</a> </li>
-                            <li> <a href="#contacts-cfp" style="text-decoration: none; color: #0667DB;">問い合わせ</a> </li>
-                        </ul>
-                        <br>
-                        <p class="warning-top">※参考訳となります．原文と参考訳の記述に齟齬がある場合は原文の記述が優先されます．</p>
-                        <br>
-                        <p>今回で5回目となるAsian CHI Symposiumは，アジアで実施されたヒューマン・コンピュータ・インタラクション（HCI），ユーザ体験（UX）の研究，またはアジアの社会文化的要素をデザインや実装に取り入れたさまざまな研究を発表するシンポジウムで，毎年CHIカンファレンスと同時に開催されます．本シンポジウムでは，アジア地域特有の問題点やアプローチをグローバルに発信することを目指しています．
-                            <div id="separator"></div>
-                            本シンポジウムでは，アジア内のあらゆるキャリアステージの研究者（例：ベテランの研究者，若手研究者，大学院生，さらにはHCIに興味を持つ学部生）や企業の実務家の参加を歓迎します．また，学部生から博士課程，ポスドク研究者までの若手研究者のネットワークを育成することも目指しています．
-                            <div id="separator"></div>
-                            投稿された論文はブラインド査読方式で査読され，採択された論文は，ACM Digital Libraryに掲載されます(ISBN: 978-1-4503-8203-8)．
-                        </p>
+                        <p>本シンポジウムでは，以下のHCI分野における研究テーマの発表を募集しています（これらに限定されるわけではありません）．</p>
                         <div id="separator"></div>
-                        <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">投稿する</button>
-                        <!--div class="submission-details">
-                            <h2>Submission Details</h2>
-                            <div class="document">
-                                <img alt="document-icon" src="../icons/document.svg">
-                                <div>
-                                    <h4>Template</h4>
-                                    <a class= "affiliation-link" href="">CHI 2020 Papers Proceeding template</a>
-                                </div>
-                            </div>
-                            <button class="default-button">Make a Submission</button>
-                        </div-->
-                        
-                        </div>
-                        <div id="important-dates" class="important-dates">
-                            <h2>スケジュール</h2>
-                            <p>締切の時間は全て日本時間の23:59 <a class="timezone-link" href="https://24timezones.com/time-zone/gmt+9#gref">(GMT + 09)</a>とします．</p>
-                            </p>
-                            <table class="important-dates-overview">
-                                <tr>
-                                    <th colspan="2">Round 1</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>投稿締切</p>
-                                        <!--p>at 23:59 AoE - Anywhere on Earth</p-->
-                                    </td>
-                                    <td class="important-date">2021年1月28日</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Desk Rejectの通知予定日</p>
-                                    </td>
-                                    <td class="important-date">2021年2月4日</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>採否通知予定日</p>
-                                    </td>
-                                    <td class="important-date">2021年3月9日</td>
-                                </tr>
-                                <!--tr>
-                                    <td>
-                                        <p>Reviews sent to authors</p>
-                                    </td>
-                                    <td class="important-date">February 11, 2020</td>
-                                </tr-->
-                                <tr>
-                                    <th colspan="2">Round 2</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>投稿締切</p>
-                                        <!--p>at 23:59 AoE - Anywhere on Earth</p-->
-                                    </td>
-                                    <td class="important-date">2021年2月25日</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Desk Rejectの通知予定日</p>
-                                    </td>
-                                    <td class="important-date">2021年3月4日</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>採否通知予定日</p>
-                                    </td>
-                                    <td class="important-date">2021年4月6日</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Round1／Round2のカメラレディ論文 提出締切</p>
-                                    </td>
-                                    <td class="important-date">2021年4月20日</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Asian CHI Symposium 2021</p>
-                                    </td>
-                                    <td class="important-date">2021年5月7-8日 </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div id="themes" class="themes">
-                            <h2>募集テーマ</h2>
-                            <div id="separator"></div>
-                            <p>本シンポジウムでは，以下のHCI分野における研究テーマの発表を募集しています（これらに限定されるわけではありません）．</p>
-                            <div class="themes-points">
+                        <div class="themes-points">
                             <ul>
                                 <li>新しいインタラクティブシステム・インタラクションのデザインや手法</li>
                                 <li>コンピュータとの新たなインタラクションを可能にするハードウェア・ソフトウェア</li>
@@ -228,11 +213,12 @@
                                 <li>Aその他，HCIコミュニティへインパクトを与える特定の応用分野または関心領域（例：疎外地域社会，障碍，人間以外のステークホルダ，慈善団体，低・中所得者など）</li>
                             </ul>
                         </div>
-                        </div>
+                        <div id="line-separator"></div>
                         <div id="submission-details">
                             <h2>投稿形式</h2>
                             <div id="separator"></div>
                             <p>本年は以下の2種類の投稿形式での発表を募集します．</p>
+                            <div id="separator"></div>
                             <div class="submission-points">
                                 <ul>
                                     <li>Original Works</li>
@@ -240,10 +226,12 @@
                                 </ul>
                             </div>
                         </div>
+                        <div id="line-separator"></div>
                         <div class="original-works" id="original-works">
                             <h4><b>1. Original Works</b></h4>
                             <div id="separator"></div>
                             <p>このカテゴリでは，以下のような新規性のある研究を募集します．</p>
+                            <div id="separator"></div>
                             <div class="submission-points">
                                 <ul>
                                     <li>完成したシステム，および，完了した研究 </li>
@@ -251,24 +239,25 @@
                                     <li>過去に発表された研究を発展させた，または別の視点からの考察を含む研究</li>
                                 </ul>
                             </div>
-                            <div id="separator"></div>
+                            <br>
                             <p>Original Worksの投稿は，以下のような形式を選択することができます．</p>
+                            <div id="separator"></div>
                             <div class="submission-points">
                                 <ul>
                                     <li>Paper（5～10ページ，参考文献と謝辞を含む）</li>
                                     <li>Poster or demo（4ページ以内，参考文献と謝辞を含む）．</li>
                                 </ul>
                             </div>
-                            <div id="separator"></div>
+                            <br>
                             <p>採択されたOriginal WorksはすべてACMデジタルライブラリに掲載されます．一方，ポスター/デモ投稿の場合は，ACMデジタルライブラリへの掲載を拒否することができます．</p>
                             <div id="separator"></div>
                             <p>投稿された論文はすべてブラインド査読方式で査読され．採択された作品は，ACM Digital Library（ISBN: 978-1-4503-8203-8）に掲載されます．</p>
                             <div id="separator"></div>
                             <p>ただし，採択の可否に関わらず，投稿されたすべてのOriginal Works（論文またはポスター/デモ投稿の両方）は，Asian CHI Symposiumのセッションにて口頭発表またはデモ発表をしていただきます．</p>
                         </div>
+                        <div id="line-separator"></div>
                         <div class="showcase" id="showcase">
-                            <h4><b>2. Pameran</b></h4>
-                            <div id="separator"></div>
+                            <h4><b>2. Showcase</b></h4>
                             <div id="separator"></div>
                             <p>このカテゴリでは，CHI 2021の本会議での発表（<a href="https://chi2021.acm.org/for-authors">このページ</a>に掲載されているもの）として採択された研究を募集します．</p>
                             <div id="separator"></div>
@@ -280,7 +269,7 @@
                             <div id="separator"></div>
                             <p>また，採択されたすべてのShowcase投稿は，Asian CHI Symposiumで発表いただきます．</p>
                         </div>
-        
+                        <div id="line-separator"></div>
                         <div class="prepare-submission">
                             <h2>投稿準備</h2>
                             <div id="separator"></div>
@@ -290,7 +279,7 @@
                             <div id="separator"></div>
                             <p>Original WorksとShowcaseのいずれに投稿においても，一般に公開されているリソースへの主要な参考文献を含める必要があります．また，ポスターやデモビデオの草稿を補足資料として提出することもできます．どちらのタイプの投稿も，匿名化されていない状態で，<a href="https://asianchi21.hotcrp.com/">HotCRP</a>を通じてアップロードする必要があります．</p>
                         </div>
-        
+                        <div id="line-separator"></div>
                         <div class="selection-process" id="selection-process">
                             <h2>査読・選考プロセス</h2>
                             <div id="separator"></div>
@@ -302,6 +291,7 @@
                             <div id="separator"></div>
                             <p>minor revisionを必要とする条件付き採択となった投稿は，カメラレディ原稿の提出期限後，査読委員らの確認を経て，ACM Digital Libraryのプロシーディングスに掲載されます．</p>
                         </div>
+                        <div id="line-separator"></div>
                         <div id="participate-symposium" class="participate-symposium">
                             <h2>シンポジウムへの参加</h2>
                             <div id="separator"></div>
@@ -311,58 +301,68 @@
                             <div id="separator"></div>
                             <p>Poster or demoの投稿が採択された著者は，最終的なポスター原稿（PDF）と5分間のデモビデオファイルをシンポジウムの5日前までに提出し，ポスター/デモセッションで紹介できるようにしてください．</p>
                         </div>
+                        <div id="line-separator"></div>
                         <div class="have-questions">
-                            <div>
-                            <h3>問い合わせ</h3>
-                            </div>
+                            <h2>問い合わせ</h2>
+                            <div id="separator"></div>
                             <div id="contacts-cfp" class="contacts">
-                                <div class="contact">
-                                    <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/josh.jpg">
-                                    <div class="" style="margin-left: 1.5rem;">
-                                        <p style="font-style: bold"><b>Josh (Adi B. Tedjasaputra)</b></p>
-                                        <p class="contact-info">Customer Experience Insight Pty Ltd</p>
-                                        <p class="contact-info"><a href = "mailto:josh@cxinsight.com.au">josh@cxinsight.com.au</a></p>
+                                <div class="contact row1">
+                                    <div class="contact josh">
+                                        <img width="120px" height="120px" class="chair-picture" alt="general-chair-name" src="images/josh.jpg">
+                                        <div class="info-container">
+                                            <p style="font-style: bold"><b>Josh (Adi B. Tedjasaputra)</b></p>
+                                            <p class="contact-info">Customer Experience Insight Pty Ltd</p>
+                                            <p class="contact-info"><a href = "mailto:josh@cxinsight.com.au">josh@cxinsight.com.au</a></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="separator"></div>
-                                <div class="contact">
-                                    <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/masitah.JPG">
-                                    <div>
-                                    <p style="font-style: bold"><b>Masitah Ghazali</b></p>
-                                    <p class="contact-info">Universiti Teknologi Malaysia</p>
-                                    <p class="contact-info"><a href = "mailto:masitah@utm.my">masitah@utm.my</a></p>
+                                    <div class="contact masitah">
+                                        <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/masitah.JPG">
+                                        <div class="info-container">
+                                            <p style="font-style: bold"><b>Masitah Ghazali</b></p>
+                                            <p class="contact-info">Universiti Teknologi Malaysia</p>
+                                            <p class="contact-info"><a href = "mailto:masitah@utm.my">masitah@utm.my</a></p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div id="separator"></div>
                                 <div class="contact">
                                     <img width="120px" height="120px" class="chair-picture" alt="cfp-contact" src="images/sayan.jpg">
-                                    <div>
-                                    <p style="font-style: bold"><b>Sayan Sarcar</b></p>
-                                    <p class="contact-info">University of Tsukuba, Japan</p>
-                                    <p class="contact-info"><a href = "mailto:mailtosayan@gmail.com">mailtosayan@gmail.com</a></p>
+                                    <div class="info-container">
+                                        <p style="font-style: bold"><b>Sayan Sarcar</b></p>
+                                        <p class="contact-info">University of Tsukuba, Japan</p>
+                                        <p class="contact-info"><a href = "mailto:mailtosayan@gmail.com">mailtosayan@gmail.com</a></p>
                                     </div>
                                 </div>
                         </div>
-                    </span>
-                </p>
-            </div>
-            
-            </main>
-            <footer>
-                <p>Follow Our Social Media</p>
-                <div class="icons">
-                    <span id="twitter">
-                        <img height="32px" width="32px" class="twitter-icon" alt="twitter-icon" src="icons/twitter-icon.svg">
-                    </span>
-                    <span id="facebook">
-                        <img height="32px" width="32px" class="facebook-icon" alt="facebook-icon" src="icons/facebook-icon.svg">
-                    </span>
+                    </div>
                 </div>
-                <small>Showcasing Asian ingenuity in addressing local challenges in human-computer interaction research.</small>
-                <small>&copy Copyright 2020 Asian CHI Symposium 2021. Photo Credit: 2020 Office of the City of Yokohama Representative to the Americas</small>
-            </footer>
+                <div></div>
+            </div> 
+            </span>
+        </p>
+        </main>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+        <footer>
+            <p>Follow Our Social Media</p>
+            <div class="icons">
+                <span id="twitter">
+                    <img height="32px" width="32px" class="twitter-icon" alt="twitter-icon" src="icons/twitter-icon.svg">
+                </span>
+                <span id="facebook">
+                    <img height="32px" width="32px" class="facebook-icon" alt="facebook-icon" src="icons/facebook-icon.svg">
+                </span>
+            </div>
+            <small>Showcasing Asian ingenuity in addressing local challenges in Human-computer Interaction research.</small>
+            <small>&copy Copyright 2020 Asian CHI Symposium 2021. Photo Credit: 2020 Office of the City of Yokohama Representative to the Americas</small>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="app.js"></script>
+
+        <!-- include jquery -->
+        <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <!-- include the jquery-accessibleMegaMenu plugin script -->
+        <script src="js/jquery-accessibleMegaMenu.js"></script>
     </body>
 </html>

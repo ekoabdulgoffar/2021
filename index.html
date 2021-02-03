@@ -7,18 +7,16 @@
         <meta name="description" content="Asian CHI 2021 Symposium">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Asian CHI 2021 Symposium</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="loader-wrapper">
             <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
         </div>
         <button id="goToTop" title="Go to top">
-            <span>
-                <img width="24px" height="24px" class="up-arrow" alt="up-arrow" src="icons/up-arrow.svg">
-            </span>
+            <img width="24px" height="24px" class="up-arrow" alt="up-arrow" src="icons/up-arrow.svg">
         </button>
         <div class="accessibility-icons">
             <div class="text-size">
@@ -34,31 +32,36 @@
                     <a href="./index.html">ASIAN CHI SYMPOSIUM 2021</a>
                 </div>
                 <ul class="nav-links nav-menu">
+                    <!-- <li class="nav-item">
+                        <a href="./index.html">Asian CHI Symposium</a>
+                    </li> -->
                     <li class="nav-item">
                         <a href="./index.html">Home</a>
                     </li>
-                    <li class="dropdown nav-item sub-nav">
-                        <button class="dropbtn sub-nav-group">Call for Papers
+                    <li class="dropdown">
+                        <button class="dropbtn">Call for Papers
                             <span>
-                                <img height="8px" width="8px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
+                                <img height="8px" width="10px" class="caret-down" alt="caret-down" src="icons/caret-down.svg">
                             </span>
                         </button>
-                        <ul class="dropdown-content sub-nav-group">
+                        <ul class="dropdown-content dropdown_menu--animated">
                             <a href="./cfpEn.html">English</a>
                             <a href="./cfpCh.html">Chinese</a>
                             <a href="./cfpMalay.html">Malay</a>
                             <a href="./cfpJp.html">Japanese</a>
+                            <a href="./cfpKr.html">Korean</a>
                             <a href="./cfpId.html">Bahasa Indonesia</a>
                         </ul>
                         <!-- <a href="./cfpEn.html">Call For Paper (EN)</a> -->
                     </li>
                     <li class="cfp-languages nav-item">
                         <p>Call for Papers</p>
-                        <ul class="sub-nav-group">
+                        <ul class="sub-nav-group dropdown-menu dropdown_menu--animated ">
                             <li><a href="./cfpEn.html">English</a></li>
                             <li><a href="./cfpCh.html">Chinese</a></li>
                             <li><a href="./cfpMalay.html">Malay</a></li>
                             <li><a href="./cfpJp.html">Japanese</a></li>
+                            <li><a href="./cfpKr.html">Korean</a></li>
                             <li><a href="./cfpId.html">Bahasa Indonesia</a></li>
                             
                         </ul>
@@ -71,73 +74,115 @@
                     </li>
                 </ul>
                 <div class="burger-menu">
-                    <!-- <img id="menu-icon" src="icons/menu.svg" alt="burger-menu"> -->
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
             </nav>
-            <!-- <div class="shadow-background"></div> -->
-            <div class="header-picture">
+            <div class="container header-picture">
+                <!-- <div class="header__bg"></div> -->
+                <div class="multiply-picture"></div>
+                <div class="text-title">
+                    <ul>
+                        <li><h1 class="main-title">5th Asian CHI Symposium</h1></li>
+                        <div id="separator"></div>
+                        <li><h3 class="main-place">Online Virtual Symposium (previously Yokohama, Japan)</h3></li>
+                        <li><h5 class="main-date">May 7th - 8th, 2021</h5></li>
+                    </ul>
+                    <!-- <img class="chi-logo" src="images/chi-logo-clear.png"> -->
+                </div>
                 <div class="multiply-picture">
-                    <!-- <img class="header-image" alt="yokohama-header" src="images/yokohama-header.jpg"> -->
-                    <div class="text-title">
-                        <ul>
-                            <li><h1 class="main-title">5th Asian CHI Symposium</h1></li>
-                            <li><h2 class="main-place"><b>Online Virtual Symposium (previously Yokohama, Japan)</b></h2></li>
-                            <li><h3 class="main-date">May 7th - 8th, 2021</h3></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </header>
         <script src="app.js"></script>
 
         <main class="mainpage-content">
-            <div class="main-content">
-                <h2>Welcome to the Asian CHI 2021 Symposium</h2>
-                <p> Asian CHI 2021 Symposium is inviting you to showcase the latest HCI work from anywhere in Asia, the Asian diaspora, and those focusing on incorporating Asian sociocultural factors in their design and implementation. This symposium aims to foster social ties among academics (researchers and students) and practitioners and continuously grow a research community in Asia.</p>
-                <div id="separator"></div>
-                <br>
+            <div class="intro-mainpage">
+                <div class="intro">
+                    <h2>Welcome to the Asian CHI 2021 Symposium</h2>
+                    <div id="separator"></div>
+                    <!-- <img class="chi-logo" src="images/chi2021_logo.png"> -->
+                    <p> Asian CHI 2021 Symposium is inviting you to showcase the latest HCI work from anywhere in Asia, the Asian diaspora, and those focusing on incorporating Asian sociocultural factors in their design and implementation. This symposium aims to foster social ties among academics (researchers and students) and practitioners and continuously grow a research community in Asia.</p>
+                    
+                    <br><br>
+                    <h3><b>The History</b></h3>
+                    <div id="separator"></div>
+                    <p>Asian CHI Symposium was initially a joint event between Southeast Asia and Japanese CHI Symposiums held at CHI conferences since 2017. Before the event 2017, many Asian symposiums, such as ASEAN, Japanese, and Chinese CHI Symposiums were held separately at CHI conferences since 2015. These events seeded the birth of the Asian CHI Symposium in 2017. </p>
+                    <div id="separator"></div>
+                    <p>In 2016, the key organizers of Southeast Asia and Japanese CHI Symposiums decided to start a joint symposium to be held in 2017 to grow the Asian HCI community bigger and increase the participation of younger researchers and practitioners Asian community at the CHI conference. </p>
+                    <div id="separator"></div>
+                    <p>Asian CHI Symposiums have successfully brought many Asian researchers and practitioners who never came to CHI, came to CHI for the first time, and shared and published their novel research ideas. Read more about the <a href="https://drive.google.com/file/d/1l6lQ2L3fbicuKPz7gvcwYcp5HagfpWA9/view?usp=sharing">Evolution of the Asian CHI Symposium</a> and <a href="./pastEvents.html">the existing publications</a>. </p>
+                    <div id="separator"></div>
+                    <br><br>
 
-                <h3><b>The History</b></h3>
-                <p>Asian CHI Symposium was initially a joint event between Southeast Asia and Japanese CHI Symposiums held at CHI conferences since 2017. Before the event 2017, many Asian symposiums, such as ASEAN, Japanese, and Chinese CHI Symposiums were held separately at CHI conferences since 2015. These events seeded the birth of the Asian CHI Symposium in 2017. </p>
-                <div id="separator"></div>
-                <p>In 2016, the key organizers of Southeast Asia and Japanese CHI Symposiums decided to start a joint symposium to be held in 2017 to grow the Asian HCI community bigger and increase the participation of younger researchers and practitioners Asian community at the CHI conference. </p>
-                <div id="separator"></div>
-                <p>Asian CHI Symposiums have successfully brought many Asian researchers and practitioners who never came to CHI, came to CHI for the first time, and shared and published their novel research ideas. Read more about the <a href="https://drive.google.com/file/d/1l6lQ2L3fbicuKPz7gvcwYcp5HagfpWA9/view?usp=sharing">Evolution of the Asian CHI Symposium</a> and <a href="./pastEvents.html">the existing publications</a>. </p>
-                <div id="separator"></div>
-                <br>
-
-                <h3><b>Asian CHI 2021</b></h3>
-                <p>Asian CHI Symposium is no longer just a joint event between Southeast Asia and the Japanese CHI community. We aim to showcase the latest HCI work from anywhere in Asia, the Asian diaspora, and those focusing on incorporating Asian sociocultural factors in their design and implementation through this symposium. This symposium aims to foster social ties among academics (researchers and students) and practitioners and continuously grow a research community in Asia.</p>
-                <div id="separator"></div>
-                <p>In 2020, we organized the <a href="https://sigchi.org/wp-content/uploads/2021/01/31-July-2020-SIGCHI_Chapter_Newsletter_July2020.pdf">Asian CHI Symposium 2020</a> virtually due to the COVID-19 pandemic successfully. <a href="https://chi2021.acm.org/for-authors/interacting-discussing/workshops-symposia/accepted-workshops-symposiums">At CHI 2021</a>, we will organize the second virtual Asian CHI Symposium online instead of in Yokohama, Japan. </p>
-                <div id="separator"></div>
-                <p>The accepted workshop proposal can be found here. If you are interested in submitting, please check this <a href="./cfpEn.html">Call for Paper (English)</a>. Selected work will be published at <a href="https://dl.acm.org/">ACM Digital Library</a> (ISBN: 978-1-4503-8203-8).</p>
-                <p>If you are interested in submitting, please check this <a href="./cfpEn.html">Call for Paper (English)</a>. Selected work will be published at <a href="https://dl.acm.org/">ACM Digital Library</a> (ISBN: 978-1-4503-8203-8).</p>
-            </div>
-            <div class="important-dates-side">
-                <hr class="separator-important">
-                <h3><b>Important Dates</b></h3>
-                <p><b>Round 1</b></p>
-                <ul class="round-list">
-                    <li>Submission Deadline: <br><b>January 28th, 2021</b></li>
-                    <li>Desk Reject Notification: <br><b>February 4th, 2021</b></li>
-                    <li>Notification of Acceptance: <br><b>March 9th, 2021</b></li>
-                </ul>
-                <div id="separator"></div>
-                <p><b>Round 2</b></p>
-                <ul class="round-list">
-                    <li>Submission Deadline: <br><b>February 25th, 2021</b></li>
-                    <li>Desk-Reject Notification: <br><b>March 4th, 2021</b></li>
-                    <li>Notification of Acceptance: <br><b>April 6th, 2021</b></li>
-                </ul>
-                <div id="separator"></div>
-                    <p>Publication-ready Deadline: <br /><strong>April 20th, 2021</strong></p>
-                    <p>Asian CHI Symposium 2021: <br /><strong>May 7th - 8th, 2021</strong></p>
-
-                <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">Make a Submission</button>
+                    <h3><b>Asian CHI 2021</b></h3>
+                    <div id="separator"></div>
+                    <p>Asian CHI Symposium is no longer just a joint event between Southeast Asia and the Japanese CHI community. We aim to showcase the latest HCI work from anywhere in Asia, the Asian diaspora, and those focusing on incorporating Asian sociocultural factors in their design and implementation through this symposium. This symposium aims to foster social ties among academics (researchers and students) and practitioners and continuously grow a research community in Asia.</p>
+                    <div id="separator"></div>
+                    <p>In 2020, we organized the <a href="https://sigchi.org/wp-content/uploads/2021/01/31-July-2020-SIGCHI_Chapter_Newsletter_July2020.pdf">Asian CHI Symposium 2020</a> virtually due to the COVID-19 pandemic successfully. <a href="https://chi2021.acm.org/for-authors/interacting-discussing/workshops-symposia/accepted-workshops-symposiums">At CHI 2021</a>, we will organize the second virtual Asian CHI Symposium online instead of in Yokohama, Japan. </p>
+                    <div id="separator"></div>
+                    <p>The accepted workshop proposal can be found here. If you are interested in submitting, please check this <a href="./cfpEn.html">Call for Paper (English)</a>. Selected work will be published at <a href="https://dl.acm.org/">ACM Digital Library</a> (ISBN: 978-1-4503-8203-8).</p>
+                    <p>If you are interested in submitting, please check this <a href="./cfpEn.html">Call for Paper (English)</a>. Selected work will be published at <a href="https://dl.acm.org/">ACM Digital Library</a> (ISBN: 978-1-4503-8203-8).</p>
+                </div>
+    
+                <div class="important-dates-side">
+                    <h3><b>Important Dates</b></h3>
+                    <div id="separator"></div>
+                    <h4>Round 1</h4>
+                    <div id="table-title"></div>
+                    <table class="index-dates">
+                        <tbody>
+                            <tr>
+                                <th>Submission Deadline</th>
+                                <td>January 28th, 2021</td>
+                            </tr>
+                            <tr>
+                                <th>Desk Reject Notification</th>
+                                <td>February 4th, 2021</td>
+                            </tr>
+                            <tr>
+                                <th>Notification of Acceptance</th>
+                                <td>March 9th, 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h4>Round 2</h4>
+                    <div id="table-title"></div>
+                    <table class="index-dates">
+                        <tbody>
+                            <tr>
+                                <th>Submission Deadline</th>
+                                <td>February 25th, 2021</td>
+                            </tr>
+                            <tr>
+                                <th>Desk Reject Notification</th>
+                                <td>March 4th, 2021</td>
+                            </tr>
+                            <tr>
+                                <th>Notification of Acceptance</th>
+                                <td>April 6th, 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div id="table-title"></div>
+                    <table class="index-dates">
+                        <tbody>
+                            <tr>
+                                <th>Publication-ready Deadline</th>
+                                <td>April 20th, 2021</td>
+                            </tr>
+                            <tr>
+                                <th>Asian CHI Symposium 2021</th>
+                                <td>May 7th - 8th, 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">Make a Submission</button>
+                </div>
             </div>
         </main>
 
