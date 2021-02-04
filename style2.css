@@ -616,6 +616,16 @@ small{
     width: 120px; 
     height: 120px;
     border-radius: 4px;
+
+    /* shadows */
+    box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+}
+
+.contact-country {
+    font-size: 14px;
+    color: #000;
+    opacity: 0.6;
 }
 
 .contact-info {
@@ -631,7 +641,7 @@ small{
     display: flex;
 }
 
-.masitah .josh {
+.masitah, .josh, .kazuyuko, .amit, .toni, .sayan, .nabila,  .kaixing, .zhicon, .pranjal, .manvi {
     flex: 1;
 }
 
@@ -639,7 +649,7 @@ small{
     margin-left: 1rem;
 }
 
-.briane {
+.briane, .yangLi, .shio, .diksha, .jordan, .umar, .zhicong, .simran {
     flex: 1;
     margin-left: 1rem;
 }
@@ -653,22 +663,27 @@ small{
     width: 100%;
     margin: 24px 0 52px 0;
     border-spacing: 0;
+    text-align: center;
 }
 
 .ambassadors-table th{
-    border: 1px solid #C4C4C4;
-    background-color: #F3F6FC;
+    padding: 0.75rem 2rem;
+    background-color: #02287A;
+    color: #fff;
 }
 
 .ambassadors-table td{
-    border: 1px solid #C4C4C4;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
     padding: 0.75rem 2rem;
-    background-color: #fff;
-    border: 1px solid #C4C4C4;
 }
 
-.ambassadors-table table tr:nth-child(odd) {
-    background-color: red;
+.ambassadors-table tr td:nth-child(1), .ambassadors-table tr td:nth-child(2), .ambassadors-table tr td:nth-child(3) {
+    width: 33%;
+}
+
+.ambassadors-table tr:nth-child(odd) {
+    background-color: #F3F6FC;
 }
 
 /* past events */
