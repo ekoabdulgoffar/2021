@@ -25,7 +25,7 @@
 
             </div>
             <div class="contrast">
-                
+
             </div>
         </div>
         <header>
@@ -123,7 +123,7 @@
                             <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">Make a Submission</button>
                 </div>
                 <div></div>
-            </div> 
+            </div>
             <div id="important-dates" class="mainpage-content important-dates">
                 <div></div>
                 <div>
@@ -249,8 +249,8 @@
                                 </ul>
                             </div>
                             <br>
-                            <p>All accepted papers of the Original Works will be published to the ACM Digital Library. 
-                                Whereas, for the Poster/Demo submission, the authors can opt-out not to publish their works to the ACM Digital Library.  
+                            <p>All accepted papers of the Original Works will be published to the ACM Digital Library.
+                                Whereas, for the Poster/Demo submission, the authors can opt-out not to publish their works to the ACM Digital Library.
                             </p>
                             <div id="separator"></div>
                             <p>All the papers submitted to the works will undergo an anonymous peer-review process. The selected works will be published in the ACM Digital Library (ISBN: 978-1-4503-8203-8). </p>
@@ -299,7 +299,7 @@
                             <div id="separator"></div>
                             <p>Before the symposium, all accepted submissions must prepare a 5-minute video presentation summarizing their works and submit it to <a href="https://asianchi21.hotcrp.com/">HotCRP</a> at least five days before the event. These will be played during the symposium and followed by a 3-minute live Q&A session. At least one author should join the symposium virtually and answer queries from the attendees. </p>
                             <div id="separator"></div>
-                            <p>Authors of accepted poster and demo submissions must submit their final poster document (PDF) and 5-min demo video file at least five days before the symposium so that those can be showcased at the poster/demo session.    
+                            <p>Authors of accepted poster and demo submissions must submit their final poster document (PDF) and 5-min demo video file at least five days before the symposium so that those can be showcased at the poster/demo session.
                             </p>
                         </div>
                         <div id="line-separator"></div>
@@ -338,7 +338,7 @@
                     </div>
                 </div>
                 <div></div>
-            </div> 
+            </div>
             </span>
         </p>
         </main>
@@ -365,5 +365,18 @@
 
         <!-- include the jquery-accessibleMegaMenu plugin script -->
         <script src="js/jquery-accessibleMegaMenu.js"></script>
+        <script>
+            $('.dropdown').keydown(function(e){
+               if(e.which == 40){ // 9-tab, 40-down-arrow
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').show();
+               }
+
+               else if(e.which == 38){
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').hide();
+               }
+             });
+        </script>
     </body>
 </html>
