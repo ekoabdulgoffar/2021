@@ -23,7 +23,7 @@
 
             </div>
             <div class="contrast">
-                
+
             </div>
         </div>
         <header>
@@ -106,7 +106,7 @@
                     <div id="separator"></div>
                     <!-- <img class="chi-logo" src="images/chi2021_logo.png"> -->
                     <p> Asian CHI 2021 Symposium is inviting you to showcase the latest HCI work from anywhere in Asia, the Asian diaspora, and those focusing on incorporating Asian sociocultural factors in their design and implementation. This symposium aims to foster social ties among academics (researchers and students) and practitioners and continuously grow a research community in Asia.</p>
-                    
+
                     <br><br>
                     <h3><b>The History</b></h3>
                     <div id="separator"></div>
@@ -127,7 +127,7 @@
                     <p>The accepted workshop proposal can be found here. If you are interested in submitting, please check this <a href="./cfpEn.html">Call for Paper (English)</a>. Selected work will be published at <a href="https://dl.acm.org/">ACM Digital Library</a> (ISBN: 978-1-4503-8203-8).</p>
                     <p>If you are interested in submitting, please check this <a href="./cfpEn.html">Call for Paper (English)</a>. Selected work will be published at <a href="https://dl.acm.org/">ACM Digital Library</a> (ISBN: 978-1-4503-8203-8).</p>
                 </div>
-    
+
                 <div class="important-dates-side">
                     <h3><b>Important Dates</b></h3>
                     <div id="separator"></div>
@@ -210,5 +210,18 @@
 
         <!-- include the jquery-accessibleMegaMenu plugin script -->
         <script src="js/jquery-accessibleMegaMenu.js"></script>
+        <script>
+            $('.dropdown').keydown(function(e){
+               if(e.which == 40){ // 9-tab, 40-down-arrow
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').show();
+               }
+
+               else if(e.which == 38){
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').hide();
+               }
+             });
+        </script>
     </body>
 </html>

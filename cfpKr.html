@@ -25,7 +25,7 @@
 
             </div>
             <div class="contrast">
-                
+
             </div>
         </div>
         <header>
@@ -123,7 +123,7 @@
                     <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">投稿する</button>
                 </div>
                 <div></div>
-            </div> 
+            </div>
             <div id="important-dates" class="mainpage-content important-dates">
                 <div></div>
                 <div>
@@ -335,7 +335,7 @@
                     </div>
                 </div>
                 <div></div>
-            </div> 
+            </div>
             </span>
         </p>
         </main>
@@ -362,5 +362,18 @@
 
         <!-- include the jquery-accessibleMegaMenu plugin script -->
         <script src="js/jquery-accessibleMegaMenu.js"></script>
+        <script>
+            $('.dropdown').keydown(function(e){
+               if(e.which == 40){ // 9-tab, 40-down-arrow
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').show();
+               }
+
+               else if(e.which == 38){
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').hide();
+               }
+             });
+        </script>
     </body>
 </html>

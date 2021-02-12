@@ -25,7 +25,7 @@
 
             </div>
             <div class="contrast">
-                
+
             </div>
         </div>
         <header>
@@ -116,14 +116,14 @@
                         <li> <a href="#contacts-cfp" style="text-decoration: none; color: #0667DB;">Kontak</a> </li>
                     </ul>
                     <br>
-                    <p>The 5th Asian CHI Symposium adalah simposium tahunan yang diselenggarakan bersama dengan konferensi CHI untuk memamerkan karya mutakhir di bidang interaksi manusia-komputer dan pengalaman pengguna di wilayah Asia dan karya yang memiliki fokus pada penyatuan faktor sosial budaya Asia pada proses desain dan implementasinya. Simposium ini mempromosikan masalah dan pendekatan unik pada wilayah ini pada komunitas global. 
+                    <p>The 5th Asian CHI Symposium adalah simposium tahunan yang diselenggarakan bersama dengan konferensi CHI untuk memamerkan karya mutakhir di bidang interaksi manusia-komputer dan pengalaman pengguna di wilayah Asia dan karya yang memiliki fokus pada penyatuan faktor sosial budaya Asia pada proses desain dan implementasinya. Simposium ini mempromosikan masalah dan pendekatan unik pada wilayah ini pada komunitas global.
                     <div id="separator"></div>
                     <p>Kami mendorong partisipasi peneliti dan praktisi dari komunitas profesional dan akademis Asia di semua tahap karir (baik akademisi berpengalaman, peneliti pemula, mahasiswa pascasarjana, bahkan mahasiswa sarjana yang memiliki minat di bidang HCI dan UX) dari komunitas Asia untuk menjadi bagian dari simposium ini. Simposium ini juga diselenggarakan untuk menjalin jaringan peneliti muda baik dari mahasiswa di jenjang sarjana hingga kandidat doktor, lulusan baru, dan peneliti <i>post-doctoral</i>. </p>
                     <div id="separator"></div>
                     <button onclick="location.href = 'https://asianchi21.hotcrp.com/';" id="make-submission" class="default-button make-submission">Make a Submission</button>
                 </div>
                 <div></div>
-            </div> 
+            </div>
             <div id="important-dates" class="mainpage-content important-dates">
                 <div></div>
                 <div>
@@ -336,7 +336,7 @@
                     </div>
                 </div>
                 <div></div>
-            </div> 
+            </div>
             </span>
         </p>
         </main>
@@ -363,5 +363,18 @@
 
         <!-- include the jquery-accessibleMegaMenu plugin script -->
         <script src="js/jquery-accessibleMegaMenu.js"></script>
+        <script>
+            $('.dropdown').keydown(function(e){
+               if(e.which == 40){ // 9-tab, 40-down-arrow
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').show();
+               }
+
+               else if(e.which == 38){
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').hide();
+               }
+             });
+        </script>
     </body>
 </html>
