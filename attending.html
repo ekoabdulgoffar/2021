@@ -23,7 +23,7 @@
 
             </div>
             <div class="contrast">
-                
+
             </div>
         </div>
         <header>
@@ -294,5 +294,18 @@
 
         <!-- include the jquery-accessibleMegaMenu plugin script -->
         <script src="js/jquery-accessibleMegaMenu.js"></script>
+        <script>
+            $('.dropdown').keydown(function(e){
+               if(e.which == 40){ // 9-tab, 40-down-arrow
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').show();
+               }
+
+               else if(e.which == 38){
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').hide();
+               }
+             });
+        </script>
     </body>
 </html>

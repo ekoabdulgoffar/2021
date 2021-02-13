@@ -25,7 +25,7 @@
 
             </div>
             <div class="contrast">
-                
+
             </div>
         </div>
         <header>
@@ -107,7 +107,7 @@
             <div class="organizers">
                 <h2><b>General Chair</b></h2>
                 <div id="separator"></div>
-                    <div> 
+                    <div>
                     <div class="contacts">
                         <div class="contact row1">
                             <div class="contact josh">
@@ -144,7 +144,7 @@
                 <div>
                     <div class="contacts">
                         <div class="contact eunice">
-                            
+
                             <img width="120px" height="120px" class="chair-picture" alt="publisher-chair" src="images/Eunice_Sari.jpg">
                             <div class="info-container">
                                 <p style="font-style: bold"><b>Eunice Sari</b></p>
@@ -157,7 +157,7 @@
                 <div id="line-separator"></div>
                 <h2><b>Reviewer Chair</b></h2>
                 <div id="separator"></div>
-                <div> 
+                <div>
                     <div class="contacts">
                         <div class="contact row1">
                             <div class="contact sayan">
@@ -191,7 +191,7 @@
                 <div id="line-separator"></div>
                 <h2><b>Shepherd Chair</b></h2>
                 <div id="separator"></div>
-                <div> 
+                <div>
                     <div class="contacts">
                         <div class="contact dilrukshi">
                             <img width="120px" height="120px" class="chair-picture" alt="sheperd-chair" src="images/dilrukshi.jpg">
@@ -206,7 +206,7 @@
                 <div id="line-separator"></div>
                 <h2><b>Accessibility Chair</b></h2>
                 <div id="separator"></div>
-                <div> 
+                <div>
                     <div class="contacts">
                         <div class="contact row1">
                             <div class="contact kazuyuko">
@@ -240,7 +240,7 @@
                 <div id="line-separator"></div>
                 <h2><b>Online Arrangement Chair</b></h2>
                 <div id="separator"></div>
-                <div> 
+                <div>
                     <div class="contacts">
                         <div class="contact row1">
                             <div class="contact amit">
@@ -274,7 +274,7 @@
                 <div id="line-separator"></div>
                 <h2><b>Data Chair</b></h2>
                 <div id="separator"></div>
-                <div> 
+                <div>
                     <div class="contacts">
                         <div class="contact row1">
                             <div class="contact toni">
@@ -300,7 +300,7 @@
                 <div id="line-separator"></div>
                 <h2><b>Website Chair</b></h2>
                 <div id="separator"></div>
-                <div> 
+                <div>
                     <div class="contacts">
                         <div class="contact row1">
                             <div class="contact nabila">
@@ -326,7 +326,7 @@
                 <div id="line-separator"></div>
                 <h2><b>Social Media Chair</b></h2>
                 <div id="separator"></div>
-                <div> 
+                <div>
                     <div class="contacts">
                         <div class="contact row1">
                             <div class="contact kaixing">
@@ -352,7 +352,7 @@
                 <div id="line-separator"></div>
                 <h2><b>Ambassador Chair</b></h2>
                 <div id="separator"></div>
-                <div> 
+                <div>
                     <div class="contacts">
                             <div class="contact pranjal">
                                 <img width="120px" height="120px" class="chair-picture" alt="general-chair-name" src="images/pranjal.jpg">
@@ -455,5 +455,18 @@
 
         <!-- include the jquery-accessibleMegaMenu plugin script -->
         <script src="js/jquery-accessibleMegaMenu.js"></script>
+        <script>
+            $('.dropdown').keydown(function(e){
+               if(e.which == 40){ // 9-tab, 40-down-arrow
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').show();
+               }
+
+               else if(e.which == 38){
+                   e.preventDefault();
+                   $(this).parent().find('.dropdown-content').hide();
+               }
+             });
+        </script>
     </body>
 </html>
