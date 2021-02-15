@@ -15,7 +15,7 @@
         <div id="loader-wrapper">
             <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
         </div>
-        <button id="goToTop" title="Go to top">
+        <button tabindex="0" id="goToTop" title="Go to top">
             <img width="24px" height="24px" class="up-arrow" alt="up-arrow" src="icons/up-arrow.svg">
         </button>
         <div class="accessibility-icons">
@@ -50,6 +50,7 @@
                             <a href="./cfpMalay.html">Malay</a>
                             <a href="./cfpJp.html">Japanese</a>
                             <a href="./cfpKr.html">Korean</a>
+                            <a href="./cfpThai.html">Thai</a>
                             <a href="./cfpId.html">Bahasa Indonesia</a>
                         </ul>
                         <!-- <a href="./cfpEn.html">Call For Paper (EN)</a> -->
@@ -62,6 +63,7 @@
                             <li><a href="./cfpMalay.html">Malay</a></li>
                             <li><a href="./cfpJp.html">Japanese</a></li>
                             <li><a href="./cfpKr.html">Korean</a></li>
+                            <li><a href="./cfpThai.html">Thai</a></li>
                             <li><a href="./cfpId.html">Bahasa Indonesia</a></li>
                         </ul>
                     </li>
@@ -75,18 +77,18 @@
                         <a href="./pastEvents.html">Past Events</a>
                     </li>
                 </ul>
-                <div class="burger-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
+                <label for="menu" tabindex="0" id="menu-toggle" class="menu-toggle burger-menu">
+                    <!-- <img class="menu-icon" src="icons/menu.svg"> -->
+                    <!-- <object data="icons/menu.svg" class="menu-icon"></object> -->
+                    <svg width="28" height="28" data-src="./icons/menu.svg" class="menu-icon">Menu</svg>
+                </label>
             </nav>
             <div class="container header-picture">
                 <!-- <div class="header__bg"></div> -->
                 <div class="multiply-picture"></div>
                 <div class="text-title">
                     <ul>
-                        <li><h1 class="main-title">5th Asian CHI Symposium</h1></li>
+                        <li><h1 tabindex="-1" class="main-title">5th Asian CHI Symposium</h1></li>
                         <div id="separator"></div>
                         <li><h3 class="main-place">Online Virtual Symposium (previously Yokohama, Japan)</h3></li>
                         <li><h5 class="main-date">May 7th - 8th, 2021</h5></li>
@@ -207,6 +209,7 @@
 
         <!-- include jquery -->
         <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="./inert.js"></script>
 
         <!-- include the jquery-accessibleMegaMenu plugin script -->
         <script src="js/jquery-accessibleMegaMenu.js"></script>
