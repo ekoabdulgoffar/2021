@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function() { 
     const navSlide = () => {
         const burger = document.querySelector('.burger-menu');
         const nav = document.querySelector('.nav-links');
@@ -18,12 +18,10 @@ window.onload = function() {
                     //link.style./animation = `navLinkFade 0.5s ease forwards ${index / 8}s`
                 }
             });*/
+
     
             //Burger Animation
             burger.classList.toggle('toggle');
-    
-            //Add shadow background
-            shadowBackground.classList.toggle('shadow');
         })
     }
 
@@ -56,12 +54,18 @@ window.onload = function() {
                 mybutton.style.display = "none";
             }
         }
+
+        const scrollToTop = () => {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     
         // When the user clicks on the button, scroll to the top of the document
         mybutton.addEventListener('click', () => {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            scrollToTop();
         })
+
+        mybutton.onkeydown = scrollToTop();
     }
 
     // clicking call for participation on navbar sends to cfpEn
@@ -75,55 +79,64 @@ window.onload = function() {
     }
 
     const setMobileTable = () => {
-        const tableEl = document.querySelector('.ambassadors-table');
-        const thEls = tableEl.querySelectorAll('thead th');
-        const tdLabels = Array.from(thEls).map(el => el.innerText);
-        tableEl.querySelectorAll('tbody tr').forEach( tr => {
-            Array.from(tr.children).forEach( 
-            (td, ndx) =>  td.setAttribute('label', tdLabels[ndx])
-            );
-        });
+        if (window.location.pathname == '/organizers.html') {
+            const tableEl = document.querySelector('.ambassadors-table');
+            const thEls = tableEl.querySelectorAll('thead th');
+            const tdLabels = Array.from(thEls).map(el => el.innerText);
+            tableEl.querySelectorAll('tbody tr').forEach( tr => {
+                Array.from(tr.children).forEach( 
+                (td, ndx) =>  td.setAttribute('label', tdLabels[ndx])
+                );
+            });
+        }
+    }
+
+    const submissionSummaryMobile = () => {
+        if (window.location.pathname == '/cfpEn.html') {
+            const sumTable = document.querySelector('.submission-summary');
+            // console.log("function is working");
+            const sumTh = sumTable.querySelectorAll('thead th');
+            const sumTd = Array.from(sumTh).map(el => {
+                return el.innerText; // get the head text 
+            }); 
+            // console.log(sumTd);
+            sumTable.querySelectorAll('tbody tr').forEach( tr => {
+                Array.from(tr.children).forEach((td, ndx) => {
+                    if (ndx == 0) {
+                        console.log("stuff");
+                        console.log(td.innerText);
+                        td.classList.add('no-before');
+                        td.classList.add('title');
+                    }
+                    else {
+                        td.setAttribute('label', sumTd[ndx]);
+                    }
+                });
+            })
+        }
     }
 
     const confTable = () => {
-        const tableConf = document.querySelector('.conf-rates');
-        const thConf = tableConf.querySelectorAll('thead th');
-        const tdConfLabel = Array.from(thConf).map(el => el.innerText);
-        tableConf.querySelectorAll('tbody tr').forEach( tr => {
-            Array.from(tr.children).forEach( 
-            (td, ndx) =>  td.setAttribute('label', tdConfLabel[ndx])
-            );
-        });
+        if (window.location.pathname == '/attending.html') {
+            const sumTable = document.querySelector('.rates-category');
+            const sumTh = sumTable.querySelectorAll('thead th');
+            const sumTd = Array.from(sumTh).map(el => {
+                return el.innerText; // get the head text 
+            }); 
+            // console.log(sumTd);
+            sumTable.querySelectorAll('tbody tr').forEach( tr => {
+                Array.from(tr.children).forEach((td, ndx) => {
+                    if (ndx == 0) {
+                        td.classList.add('no-before');
+                        td.classList.add('title');
+                    }
+                    else {
+                        td.setAttribute('label', sumTd[ndx]);
+                    }
+                });
+            })
+        }
     }
-
-    // const keyboardControl = () => {
-    //     $("nav:first").accessibleMegaMenu({
-    //         /* prefix for generated unique id attributes, which are required 
-    //            to indicate aria-owns, aria-controls and aria-labelledby */
-    //         uuidPrefix: "accessible-megamenu",
-
-    //         /* css class used to define the megamenu styling */
-    //         menuClass: "nav-menu",
-
-    //         /* css class for a top-level navigation item in the megamenu */
-    //         topNavItemClass: "nav-item",
-
-    //         /* css class for a megamenu panel */
-    //         panelClass: "sub-nav",
-
-    //         /* css class for a group of items within a megamenu panel */
-    //         panelGroupClass: "sub-nav-group",
-
-    //         /* css class for the hover state */
-    //         hoverClass: "hover",
-
-    //         /* css class for the focus state */
-    //         focusClass: "focus",
-
-    //         /* css class for the open state */
-    //         openClass: "open"
-    //     });
-    // }
     
     const app = () => {
         navSlide();
@@ -131,9 +144,9 @@ window.onload = function() {
         goToTopButton();
         triggerLoad();
         goToCfpEn();
+        submissionSummaryMobile();
         setMobileTable();
         confTable();
-         // keyboardControl();
     }
     
     app()
