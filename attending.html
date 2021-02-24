@@ -144,6 +144,8 @@
                             <li>and also generous <a href="https://chi2021.acm.org/for-attendees/support/financial-support-for-students">Gary Marsden Travel Awards for students</a>.</li>
                         </ul>
                     </div>
+                    <div id="separator"></div>
+                    <p>The registration rate for the 2-day symposium is <b>$30</b>, and it requires the attendees to register for <b>at least one day of the conference</b>. For enjoying a significantly reduced early <a href="https://chi2021.acm.org/register">registration</a> rate, please register before or on March 16, 2021.</p>
                 </div>
                 <div id="line-separator"></div>
                 <div class="reg-rates">
@@ -152,14 +154,14 @@
                     <!-- <h3 id="reg-workshop"><b>Workshops</b></h3>
                     <div id="separator"></div>
                     <p>This year, the workshop is open to all who register. Participants attending a workshop must also register for at least one day of the conference.</p> -->
-                    <table class="conf-rates">
+                    <!-- <table class="conf-rates">
                         <div id="separator"></div>
                         <thead>
                             <tr>
                                 <th>Reg Types</th>
-                                <th><a href="#partial-country-list">Category C, H, I</a>: <b>Early</b></th>
-                                <th><a href="#partial-country-list">Category C, H, I</a>: <b>Regular</b></th>
-                                <th><a href="#partial-country-list">Category C, H, I</a>: <b>Late</b></th>
+                                <th><a href="#partial-country-list">Category C, H, I</a>: <br><p class="rates-date">Early: Through March 16</p></th>
+                                <th><a href="#partial-country-list">Category C, H, I</a>: <p class="rates-date">Regular: Through March 17 - April 13</p></th>
+                                <th><a href="#partial-country-list">Category C, H, I</a>: <p class="rates-date">Late: April 14 - May 13</p></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -176,7 +178,35 @@
                             <td>$300</td>
                         </tr>
                         </tbody>
-                    </table>
+                    </table> -->
+                    <div>
+                        <h4><a href="#partial-country-list">ACM Category C, H, I Registrants</a></h4>
+                        <div id="separator"></div>
+                        <table class="rates-category">
+                            <thead>
+                                <tr>
+                                    <th>Registration Types</th>
+                                    <th>Early: <br>Through March 16</th>
+                                    <th>Regular: <br>Through March 17 - April 13</th>
+                                    <th>Late: <br>April 14 - May 13</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ACM or SIGCHI Member</td>
+                                    <td>$100</td>
+                                    <td>$175</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td>$140</td>
+                                    <td>$220</td>
+                                    <td>$300</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div id="separator"></div>
                     <h3 id="reg-symposia"><b>Symposia Rates</b></h3>
                     <div id="separator"></div>
@@ -201,9 +231,9 @@
                 <div id="partial-country-list">
                     <h2>Partial List of Asian Countries</h2>
                     <div id="separator"></div>
-                    <h5><b>Category C - all countries not listed in category H or I.</b></h5>
+                    <h5 id="category-c"><b>Category C - all countries not listed in category H or I.</b></h5>
                     <div id="separator"></div>
-                    <h5><b>Category H</b></h5>
+                    <h5 id="category-h"><b>Category H</b></h5>
                     <div id="separator"></div>
                     <ul class="country-list">
                         <li>Malaysia</li>
@@ -213,7 +243,7 @@
                     <div id="separator"></div>
                     <h5><b>Category I</b></h5>
                     <div id="separator"></div>
-                    <ul class="country-list">
+                    <ul id="category-i" class="country-list">
                         <li>Afghanistan</li>
                         <li>Bangladesh</li>
                         <li>Bhutan</li>
@@ -293,9 +323,6 @@
 
         <!-- include jquery -->
         <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-
-        <!-- include the jquery-accessibleMegaMenu plugin script -->
-        <script src="js/jquery-accessibleMegaMenu.js"></script>
         <script>
             $('.dropdown').keydown(function(e){
                if(e.which == 40){ // 9-tab, 40-down-arrow
