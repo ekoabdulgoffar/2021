@@ -365,7 +365,7 @@ header {
     grid-column-end: third;
     /* position: absolute; */
     bottom: 0;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding: 1.5rem 0;
     /* background-color: rgba(0,0,0, 0.3); */
     /* background-color: rgba(2, 40, 122, 1); */
